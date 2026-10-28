@@ -1428,3 +1428,53 @@ code { font-family: ui-monospace, "Cascadia Code", Consolas, monospace; font-siz
 .nav__pair:has(.is-active, [aria-current="page"]):hover > .nav__link { color: var(--c-on-ink); }
 .nav__pair:has(.is-active, [aria-current="page"]) > .nav__link:hover { background: transparent; }
 .nav__pair:has([aria-expanded="true"]) { background: var(--c-bg-deep); }
+
+/* ==========================================================================
+   Figura TPACK: rótulos dentro de cada zona y animación de armado
+   ========================================================================== */
+.tpack { overflow: visible; }
+.tpack text { font-family: var(--f-body); fill: var(--c-ink); }
+.tpack .tpack__name { font-size: 17px; font-weight: 600; }
+.tpack .tpack__sub { font-size: 14px; fill: var(--c-ink-soft); }
+.tpack .tpack__pair { font-size: 15px; font-weight: 600; letter-spacing: 0.04em; }
+.tpack .tpack__core-txt { font-size: 14px; font-weight: 600; fill: #F3EFE9; letter-spacing: 0.04em; }
+.tpack__circles { mix-blend-mode: multiply; }
+.tpack__c, .tpack__core, .tpack__pulse { transform-box: fill-box; transform-origin: center; }
+
+.js .tpack:not(.is-in) .tpack__c,
+.js .tpack:not(.is-in) .tpack__lbl,
+.js .tpack:not(.is-in) .tpack__core { opacity: 0; }
+.js .tpack.is-in .tpack__c { animation: tp-circle 1s var(--ease-spring) var(--d) both; }
+.js .tpack.is-in .tpack__lbl { animation: tp-fade 0.6s var(--ease-out) var(--d) both; }
+.js .tpack.is-in .tpack__core { animation: tp-pop 0.7s var(--ease-spring) var(--d) both; }
+.js .tpack.is-in .tpack__pulse { animation: tp-pulse 2.8s ease-out 2.4s infinite; }
+@keyframes tp-circle { from { opacity: 0; transform: scale(0.4); } to { opacity: 1; transform: none; } }
+@keyframes tp-fade { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+@keyframes tp-pop { from { opacity: 0; transform: scale(0.2); } to { opacity: 1; transform: none; } }
+@keyframes tp-pulse { 0% { opacity: 0.55; transform: scale(1); } 100% { opacity: 0; transform: scale(2.1); } }
+.tpack.reveal { opacity: 1 !important; transform: none !important; }
+[data-calma="on"] .tpack .tpack__c, [data-calma="on"] .tpack .tpack__lbl, [data-calma="on"] .tpack .tpack__core { opacity: 1 !important; }
+[data-calma="on"] .tpack__pulse { display: none; }
+
+.tpack-legend { display: grid; gap: var(--s-2); margin: var(--s-5) 0 0; }
+@media (min-width: 720px) { .tpack-legend { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.tpack-legend > div { display: grid; grid-template-columns: 4.5rem 1fr; gap: var(--s-3); align-items: start; padding: var(--s-3) var(--s-4); border-radius: var(--r-md); background: var(--tint); }
+.tpack-legend dt { font-weight: 600; }
+.tpack-legend dd { margin: 0; font-size: var(--fs-sm); color: var(--c-ink-soft); }
+.tpack-legend__core { background: var(--c-ink) !important; }
+.tpack-legend__core dt, .tpack-legend__core dd { color: var(--c-on-ink); }
+
+/* Ideas clave resaltadas en los textos explicativos */
+mark.key {
+  padding: 0 0.12em;
+  margin: 0 -0.04em;
+  border-radius: 0.2em;
+  background: linear-gradient(transparent 56%, color-mix(in srgb, var(--d-star) 55%, transparent) 56%);
+  color: inherit;
+  font-weight: 600;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+.ink-panel mark.key, .prompt mark.key { background: linear-gradient(transparent 60%, rgba(244, 183, 154, 0.38) 60%); color: var(--c-on-ink); }
+[data-calma="on"] mark.key { background: none; text-decoration: underline; text-decoration-color: var(--c-line-strong); text-decoration-thickness: 2px; text-underline-offset: 0.18em; }
+@media print { mark.key { background: none; font-weight: 700; } }
