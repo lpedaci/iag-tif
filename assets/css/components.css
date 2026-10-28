@@ -1498,3 +1498,25 @@ mark.key {
 .team-links__in:hover, .team-links__in:focus-visible { color: var(--c-berni); }
 [data-calma="on"] .team-links__in { color: var(--c-ink-soft); }
 [data-calma="on"] .team-links__in:hover, [data-calma="on"] .team-links__in:focus-visible { color: var(--c-berni); }
+
+/* ==========================================================================
+   Pie: orden en mobile y espacio para el botón del asistente
+   ========================================================================== */
+@media (min-width: 560px) and (max-width: 899px) {
+  .site-footer__grid { grid-template-columns: 1fr 1fr; }
+  .site-footer__grid > :first-child { grid-column: 1 / -1; }
+}
+@media (max-width: 559px) {
+  .site-footer__grid { grid-template-columns: 1fr 1fr; gap: var(--s-6) var(--s-4); }
+  .site-footer__grid > :first-child { grid-column: 1 / -1; }
+}
+/* Integrantes: uno por línea en pantallas angostas, sin separadores sueltos */
+@media (max-width: 719px) {
+  .team-links { flex-direction: column; align-items: flex-start; gap: 0; }
+  .team-links > strong { margin-bottom: var(--s-1); }
+  .team-links__sep { display: none; }
+  .team-links__in { margin: -6px 0 -6px 0.15rem; }
+  .site-footer__bottom { flex-direction: column; gap: var(--s-4); }
+}
+/* Lugar libre bajo el pie para que el botón flotante no tape texto */
+body:has(.chat-launcher) .site-footer { padding-bottom: calc(var(--s-6) + 5rem); }
