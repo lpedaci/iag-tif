@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="es-AR" data-root="">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sistema de diseño · El aula que incluye</title>
+<meta name="description" content="Principios, color, tipografía, espaciado, componentes, iconos, movimiento y accesibilidad del sitio El aula que incluye, documentados con los mismos tokens y componentes del código.">
+<link rel="canonical" href="https://lpedaci.github.io/iag-tif/sistema-de-diseno.html">
+<meta name="theme-color" content="#FBF7F1">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_AR">
+<meta property="og:site_name" content="El aula que incluye">
+<meta property="og:title" content="Sistema de diseño · El aula que incluye">
+<meta property="og:description" content="Principios, color, tipografía, espaciado, componentes, iconos, movimiento y accesibilidad del sitio El aula que incluye, documentados con los mismos tokens y componentes del código.">
+<meta property="og:url" content="https://lpedaci.github.io/iag-tif/sistema-de-diseno.html">
+<meta property="og:image" content="https://lpedaci.github.io/iag-tif/assets/img/og/og-el-aula-que-incluye.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Berni, un monstruo azul y peludo con destellos blancos, sentado y sonriendo sobre un fondo beige.">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend:wght@300..700&amp;family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&amp;display=swap">
+<link rel="stylesheet" href="assets/css/tokens.css?v=20261027l">
+<link rel="stylesheet" href="assets/css/base.css?v=20261027l">
+<link rel="stylesheet" href="assets/css/components.css?v=20261027l">
+<script src="assets/js/calma.js?v=20261027l"></script>
+<script src="assets/js/main.js?v=20261027l" defer></script>
+
+<script src="assets/js/chatbot.js?v=20261027l" defer></script>
+</head>
+<body>
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true"><symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol><symbol id="i-arrow-left" viewBox="0 0 24 24"><path d="M19 12H5M11 6l-6 6 6 6"/></symbol><symbol id="i-chevron" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></symbol><symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h10"/></symbol><symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></symbol><symbol id="i-book" viewBox="0 0 24 24"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v15H6.5A2.5 2.5 0 0 0 4 20.5zM4 20.5A2.5 2.5 0 0 0 6.5 23H20M8.5 7.5h7"/></symbol><symbol id="i-film" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="3"/><path d="M3 9h18M8.5 4l-2 5M13.5 4l-2 5M18.5 4l-2 5"/></symbol><symbol id="i-headphones" viewBox="0 0 24 24"><path d="M4 15v-3a8 8 0 0 1 16 0v3"/><rect x="3" y="14" width="4.5" height="6.5" rx="1.6"/><rect x="16.5" y="14" width="4.5" height="6.5" rx="1.6"/></symbol><symbol id="i-video" viewBox="0 0 24 24"><rect x="2.5" y="6" width="13" height="12" rx="3"/><path d="M15.5 10.5l6-3.5v10l-6-3.5"/></symbol><symbol id="i-chat" viewBox="0 0 24 24"><path d="M20.5 12a8.5 8.5 0 0 1-12.3 7.6L3.5 20.5l1-4.4A8.5 8.5 0 1 1 20.5 12z"/><path d="M8.5 12h.01M12 12h.01M15.5 12h.01"/></symbol><symbol id="i-sparkle" viewBox="0 0 24 24"><path d="M11 3.5l1.9 5.1 5.1 1.9-5.1 1.9L11 17.5l-1.9-5.1L4 10.5l5.1-1.9zM18.5 3v4M16.5 5h4"/></symbol><symbol id="i-leaf" viewBox="0 0 24 24"><path d="M5 19.5C5 11 10 5 20 4.5c0 10-6 15-14.5 15"/><path d="M5 19.5l7.5-7.5"/></symbol><symbol id="i-print" viewBox="0 0 24 24"><path d="M7 9V3.5h10V9"/><rect x="3" y="9" width="18" height="8" rx="2"/><path d="M7 14h10v6.5H7z"/></symbol><symbol id="i-download" viewBox="0 0 24 24"><path d="M12 3.5v11.5M7 10l5 5 5-5M4.5 20.5h15"/></symbol><symbol id="i-play" viewBox="0 0 24 24"><path d="M8 5.5v13l11-6.5z" fill="currentColor" stroke="none"/></symbol><symbol id="i-external" viewBox="0 0 24 24"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></symbol><symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol><symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7"/></symbol><symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.2"/><path d="M3 19.5c.8-3.4 3.2-5 6-5s5.2 1.6 6 5"/><circle cx="17" cy="9" r="2.4"/><path d="M16.5 14c2.3 0 3.9 1.3 4.5 4"/></symbol><symbol id="i-eye" viewBox="0 0 24 24"><path d="M2.5 12S6 5.5 12 5.5 21.5 12 21.5 12 18 18.5 12 18.5 2.5 12 2.5 12z"/><circle cx="12" cy="12" r="3"/></symbol><symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3l7.5 3v5.5c0 4.5-3.2 8.3-7.5 9.5-4.3-1.2-7.5-5-7.5-9.5V6z"/><path d="M9 12l2 2 4-4"/></symbol><symbol id="i-scale" viewBox="0 0 24 24"><path d="M12 4v16M7 20h10M5 7h14M5 7l-2.5 6a2.5 2.5 0 0 0 5 0zM19 7l-2.5 6a2.5 2.5 0 0 0 5 0z"/></symbol><symbol id="i-lock" viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="9.5" rx="2.5"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></symbol><symbol id="i-map" viewBox="0 0 24 24"><path d="M9 4L3 6.5V20l6-2.5 6 2.5 6-2.5V4l-6 2.5zM9 4v13.5M15 6.5V20"/></symbol><symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 20s-7.5-4.6-7.5-10A4.3 4.3 0 0 1 12 7.4 4.3 4.3 0 0 1 19.5 10C19.5 15.4 12 20 12 20z"/></symbol><symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v5.5M12 7.5h.01"/></symbol><symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol><symbol id="i-grid" viewBox="0 0 24 24"><rect x="4" y="4" width="6.5" height="6.5" rx="1.5"/><rect x="13.5" y="4" width="6.5" height="6.5" rx="1.5"/><rect x="4" y="13.5" width="6.5" height="6.5" rx="1.5"/><rect x="13.5" y="13.5" width="6.5" height="6.5" rx="1.5"/></symbol><symbol id="i-slides" viewBox="0 0 24 24"><rect x="6" y="4.5" width="12" height="15" rx="2"/><path d="M2.5 8v8M21.5 8v8"/></symbol><symbol id="i-home" viewBox="0 0 24 24"><path d="M4 11l8-7 8 7v9H15v-6H9v6H4z"/></symbol><symbol id="i-blocks" viewBox="0 0 24 24"><rect x="3.5" y="12" width="7.5" height="8.5" rx="1.5"/><rect x="13" y="12" width="7.5" height="8.5" rx="1.5"/><rect x="8.25" y="3.5" width="7.5" height="8.5" rx="1.5"/></symbol><symbol id="i-scale-balance" viewBox="0 0 24 24"><path d="M3 12h18"/></symbol><symbol id="i-compass" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M15.5 8.5l-2 5-5 2 2-5z"/></symbol></svg>
+<a class="skip-link" href="#contenido">Saltar al contenido</a>
+<header class="site-header">
+  <div class="wrap site-header__inner">
+    <a class="brand" href="index.html"><svg class="brand__mark" viewBox="0 0 40 40" aria-hidden="true" focusable="false"><path d="M6 37V19a14 14 0 0 1 28 0v18z" fill="var(--c-accent)"/><path d="M13 37V21a7 7 0 0 1 14 0v16z" fill="var(--t-butter)"/><circle cx="23.2" cy="29" r="1.6" fill="var(--c-ink)"/><circle cx="33.5" cy="7" r="4.5" fill="var(--d-mint)"/></svg><span class="brand__text">El aula que incluye</span></a>
+    <nav class="nav" aria-label="Principal"><ul class="nav__list"><li><a class="nav__link" href="index.html">Inicio</a></li><li><a class="nav__link" href="proyecto.html">El proyecto</a></li><li class="nav__has-sub"><div class="nav__pair"><a class="nav__link" href="recursos/index.html">Recursos</a><button class="nav__link nav__sub-btn" type="button" aria-expanded="false" aria-controls="submenu-recursos" data-submenu-toggle><span class="visually-hidden">Mostrar recursos</span><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-chevron"/></svg></button></div><ul class="submenu" id="submenu-recursos" hidden><li><a href="recursos/historia-social.html"><span class="submenu__ico" style="--tint:var(--t-butter)"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-book"/></svg></span><span>Historia social<small>Unidad 2 · Texto e imagen</small></span></a></li><li><a href="recursos/animacion.html"><span class="submenu__ico" style="--tint:var(--t-sky)"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-film"/></svg></span><span>Animación<small>Unidad 3 · Video</small></span></a></li><li><a href="recursos/podcast.html"><span class="submenu__ico" style="--tint:var(--t-lav)"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-headphones"/></svg></span><span>Podcast<small>Unidad 4 · Audio</small></span></a></li><li><a href="recursos/video.html"><span class="submenu__ico" style="--tint:var(--t-peach)"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-video"/></svg></span><span>Video<small>Unidad 5 · Video</small></span></a></li><li class="submenu__all"><a href="recursos/index.html"><span class="submenu__ico"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-grid"/></svg></span><span>Ver todos los recursos<small>Con filtro por formato</small></span></a></li></ul></li><li><a class="nav__link" href="asistente.html">Preguntale a Berni</a></li><li><a class="nav__link" href="en-la-sala.html">En la sala</a></li><li><a class="nav__link" href="etica.html">Ética</a></li><li><a class="nav__link" href="creditos.html">Créditos</a></li></ul></nav>
+    <div class="header-tools">
+      <button class="calma-toggle" type="button" aria-pressed="false" data-calma-toggle><span class="calma-toggle__dot" aria-hidden="true"></span><span class="calma-toggle__label">Modo calma</span><span class="calma-toggle__label-short">Calma</span></button>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-mobile" data-menu-open><span class="visually-hidden">Abrir menú</span><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-menu"/></svg></button>
+      <a class="menu-nojs" href="#navegacion-pie">Menú</a>
+    </div>
+  </div>
+  <p class="visually-hidden" id="calma-aviso" aria-live="polite"></p>
+</header>
+  <div class="mobile-menu" id="menu-mobile" role="dialog" aria-modal="true" aria-label="Menú del sitio" hidden>
+    <div class="mobile-menu__top">
+      <a class="brand" href="index.html"><svg class="brand__mark" viewBox="0 0 40 40" aria-hidden="true" focusable="false"><path d="M6 37V19a14 14 0 0 1 28 0v18z" fill="var(--c-accent)"/><path d="M13 37V21a7 7 0 0 1 14 0v16z" fill="var(--t-butter)"/><circle cx="23.2" cy="29" r="1.6" fill="var(--c-ink)"/><circle cx="33.5" cy="7" r="4.5" fill="var(--d-mint)"/></svg><span class="brand__text">El aula que incluye</span></a>
+      <button class="menu-toggle" type="button" data-menu-close><span class="visually-hidden">Cerrar menú</span><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-close"/></svg></button>
+    </div>
+    <nav aria-label="Principal, versión mobile"><ul class="mobile-menu__list"><li><a href="index.html">Inicio<svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></a></li><li><a href="proyecto.html">El proyecto<svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></a></li><li><a href="recursos/index.html">Recursos<svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></a><ul class="mobile-menu__sub"><li><a href="recursos/historia-social.html">Historia social</a></li><li><a href="recursos/animacion.html">Animación</a></li><li><a href="recursos/podcast.html">Podcast</a></li><li><a href="recursos/video.html">Video</a></li></ul></li><li><a href="asistente.html">Preguntale a Berni<svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></a></li><li><a href="en-la-sala.html">En la sala<svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></a></li><li><a href="etica.html">Ética<svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></a></li><li><a href="creditos.html">Créditos<svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></a></li><li><a href="mapa-del-sitio.html">Mapa del sitio<svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></a></li></ul></nav>
+    <div class="mobile-menu__foot"><button class="calma-toggle" type="button" aria-pressed="false" data-calma-toggle><span class="calma-toggle__dot" aria-hidden="true"></span><span class="calma-toggle__label">Modo calma</span><span class="calma-toggle__label-short">Calma</span></button></div>
+  </div>
+<main id="contenido" tabindex="-1">
+<header class="page-hero">
+  <div class="wrap">
+    <nav class="breadcrumb" aria-label="Ruta de navegación"><ol><li><a href="index.html">Inicio</a></li><li><span aria-current="page">Sistema de diseño</span></li></ol></nav>
+    <div class="page-hero__panel" style="--tint:var(--t-lav)">
+      <div class="deco deco--spin" style="right:-3rem;top:-3rem;width:14rem" aria-hidden="true"><svg viewBox="0 0 100 100"><polygon points="50.0,0.0 58.8,17.2 75.0,6.7 74.0,26.0 93.3,25.0 82.8,41.2 100.0,50.0 82.8,58.8 93.3,75.0 74.0,74.0 75.0,93.3 58.8,82.8 50.0,100.0 41.2,82.8 25.0,93.3 26.0,74.0 6.7,75.0 17.2,58.8 0.0,50.0 17.2,41.2 6.7,25.0 26.0,26.0 25.0,6.7 41.2,17.2" fill="var(--d-star)" stroke-linejoin="round"/></svg></div>
+      <div class="deco deco--float" style="right:11rem;bottom:-2.5rem;width:6rem" aria-hidden="true"><svg viewBox="0 0 100 100" fill="none" stroke="var(--d-sky)" stroke-width="7"><circle cx="50" cy="50" r="36"/><circle cx="50" cy="50" r="20"/></svg></div>
+      <p class="eyebrow">Transparencia</p>
+      <h1>Sistema de diseño</h1>
+      <p class="lead">Las decisiones visuales y de interacción del sitio, documentadas con los mismos tokens y componentes que usa el código. Todo lo que se ve en esta página es el componente real, no una imagen.</p>
+      <div class="chip-row">
+        <span class="chip"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-grid"/></svg>Tokens en assets/css/tokens.css</span>
+        <span class="chip"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>WCAG 2.1 AA</span>
+        <span class="chip"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-leaf"/></svg>Con Modo calma</span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="wrap with-toc">
+  <aside class="toc" data-toc aria-labelledby="toc-ds">
+    <details class="toc__panel" open>
+      <summary><span id="toc-ds">En esta página</span><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-chevron"/></svg></summary>
+      <ol>
+        <li><a href="#principios">Principios</a></li>
+        <li><a href="#color">Color</a></li>
+        <li><a href="#tipografia">Tipografía</a></li>
+        <li><a href="#espaciado">Espaciado, radios y sombras</a></li>
+        <li><a href="#componentes">Componentes</a></li>
+        <li><a href="#iconos">Iconos</a></li>
+        <li><a href="#movimiento">Movimiento</a></li>
+        <li><a href="#modo-calma">Modo calma</a></li>
+        <li><a href="#accesibilidad">Accesibilidad</a></li>
+        <li><a href="#codigo">En el código</a></li>
+      </ol>
+    </details>
+  </aside>
+
+  <div>
+    <section class="prose-section" id="principios" aria-labelledby="principios-t">
+      <h2 id="principios-t">Principios</h2>
+      <p>El sitio le habla a las personas adultas que acompañan a la sala, pero cada recurso tiene que poder mostrarse a niñas y niños de 5 años. Por eso el diseño combina un tono cálido y lúdico con la posibilidad de bajar la estimulación en cualquier momento.</p>
+      <ul class="ds-principles">
+        <li style="--tint:var(--t-butter)"><strong>Un contenido, muchas puertas</strong>Cada recurso tiene su color y su icono, y la misma estructura de página. Cambia el formato, no la forma de encontrar las cosas.</li>
+        <li style="--tint:var(--t-mint)"><strong>Accesible desde el inicio</strong>Contraste AA verificado, foco visible, objetivos táctiles de 44 px y alternativas en texto para todo lo audiovisual.</li>
+        <li style="--tint:var(--t-sky)"><strong>Calma a pedido</strong>La decoración y el movimiento suman calidez, pero se apagan con un solo botón o con la preferencia del sistema.</li>
+        <li style="--tint:var(--t-peach)"><strong>Transparencia visible</strong>El uso de IA se rotula siempre con el mismo sello, para que se reconozca de un vistazo.</li>
+      </ul>
+    </section>
+
+    <section class="prose-section" id="color" aria-labelledby="color-t">
+      <h2 id="color-t">Color</h2>
+      <p>Neutros crema de una sola familia cálida, un único acento de acción y tintes pastel que identifican cada recurso. La decoración usa colores más saturados, pero nunca transmite información.</p>
+
+      <h3>Neutros y texto</h3>
+      <ul class="swatches">
+        <li><span class="swatch" style="background:var(--c-bg)"></span><strong>Fondo</strong><code>--c-bg</code><span>#FBF7F1</span></li>
+        <li><span class="swatch" style="background:var(--c-bg-deep)"></span><strong>Fondo profundo</strong><code>--c-bg-deep</code><span>#F4EEE4</span></li>
+        <li><span class="swatch" style="background:var(--c-surface)"></span><strong>Superficie</strong><code>--c-surface</code><span>#FFFFFF</span></li>
+        <li><span class="swatch" style="background:var(--c-line)"></span><strong>Línea</strong><code>--c-line</code><span>#E7DFD2</span></li>
+        <li><span class="swatch" style="background:var(--c-ink)"></span><strong>Tinta</strong><code>--c-ink</code><span>#1C2033 · 15,1:1</span></li>
+        <li><span class="swatch" style="background:var(--c-ink-soft)"></span><strong>Tinta suave</strong><code>--c-ink-soft</code><span>#454A5E · 8,2:1</span></li>
+        <li><span class="swatch" style="background:var(--c-muted)"></span><strong>Atenuado</strong><code>--c-muted</code><span>#5F6478 · 5,5:1</span></li>
+      </ul>
+
+      <h3>Acción e identidad</h3>
+      <ul class="swatches">
+        <li><span class="swatch" style="background:var(--c-accent)"></span><strong>Acento</strong><code>--c-accent</code><span>#B4471F · 5,1:1</span></li>
+        <li><span class="swatch" style="background:var(--c-accent-soft)"></span><strong>Acento suave</strong><code>--c-accent-soft</code><span>#F4B79A</span></li>
+        <li><span class="swatch" style="background:var(--c-berni)"></span><strong>Azul Berni</strong><code>--c-berni</code><span>#2F5FC4 · 5,5:1</span></li>
+      </ul>
+
+      <h3>Tintes por recurso</h3>
+      <ul class="swatches">
+        <li><span class="swatch" style="background:var(--t-butter)"></span><strong>Historia social</strong><code>--t-butter</code><span>#FBEFC4</span></li>
+        <li><span class="swatch" style="background:var(--t-sky)"></span><strong>Animación</strong><code>--t-sky</code><span>#DAE6FA</span></li>
+        <li><span class="swatch" style="background:var(--t-lav)"></span><strong>Podcast</strong><code>--t-lav</code><span>#E8E0FA</span></li>
+        <li><span class="swatch" style="background:var(--t-peach)"></span><strong>Video</strong><code>--t-peach</code><span>#FCDFCF</span></li>
+        <li><span class="swatch" style="background:var(--t-mint)"></span><strong>Asistente</strong><code>--t-mint</code><span>#D7EFE4</span></li>
+      </ul>
+      <p class="small muted">La tinta sobre cualquier tinte supera 12:1. Los contrastes se calcularon con la fórmula de luminancia relativa de WCAG 2.1.</p>
+    </section>
+
+    <section class="prose-section" id="tipografia" aria-labelledby="tipo-t">
+      <h2 id="tipo-t">Tipografía</h2>
+      <div class="ds-fonts">
+        <div class="ds-font">
+          <p class="ds-font__sample ds-font__sample--display">Aa</p>
+          <p><strong>Fraunces</strong> · títulos</p>
+          <p class="muted small">Serif cálida con eje óptico. Solo en títulos grandes, donde su personalidad suma y no complica la lectura.</p>
+        </div>
+        <div class="ds-font">
+          <p class="ds-font__sample">Aa</p>
+          <p><strong>Lexend</strong> · texto, menús y botones</p>
+          <p class="muted small">Letras amplias y aberturas abiertas, diseñadas para mejorar la fluidez de lectura. Más cómoda con miopía o astigmatismo que una sans condensada.</p>
+        </div>
+      </div>
+      <ol class="type-scale">
+        <li><code>--fs-hero</code><span style="font-family:var(--f-display);font-size:var(--fs-hero);line-height:1">Aula</span></li>
+        <li><code>--fs-3xl</code><span style="font-family:var(--f-display);font-size:var(--fs-3xl);line-height:1.1">Título de página</span></li>
+        <li><code>--fs-2xl</code><span style="font-family:var(--f-display);font-size:var(--fs-2xl)">Título de sección</span></li>
+        <li><code>--fs-xl</code><span style="font-family:var(--f-display);font-size:var(--fs-xl)">Subtítulo</span></li>
+        <li><code>--fs-lg</code><span style="font-size:var(--fs-lg)">Texto destacado</span></li>
+        <li><code>--fs-base</code><span style="font-size:var(--fs-base)">Texto de lectura, con interlineado 1,65</span></li>
+        <li><code>--fs-sm</code><span style="font-size:var(--fs-sm)">Texto secundario y menús</span></li>
+        <li><code>--fs-xs</code><span style="font-size:var(--fs-xs);font-weight:600;letter-spacing:.12em;text-transform:uppercase">Etiqueta</span></li>
+      </ol>
+      <p class="small muted">Las escalas usan <code>clamp()</code>: crecen con el ancho de pantalla sin saltos entre mobile y desktop. Los párrafos tienen un máximo de 82 caracteres por línea.</p>
+    </section>
+
+    <section class="prose-section" id="espaciado" aria-labelledby="esp-t">
+      <h2 id="esp-t">Espaciado, radios y sombras</h2>
+      <h3>Espaciado (base de 4 px)</h3>
+      <ul class="space-scale">
+        <li><span style="width:var(--s-1)"></span><code>--s-1</code> 4 px</li>
+        <li><span style="width:var(--s-2)"></span><code>--s-2</code> 8 px</li>
+        <li><span style="width:var(--s-3)"></span><code>--s-3</code> 12 px</li>
+        <li><span style="width:var(--s-4)"></span><code>--s-4</code> 16 px</li>
+        <li><span style="width:var(--s-5)"></span><code>--s-5</code> 24 px</li>
+        <li><span style="width:var(--s-6)"></span><code>--s-6</code> 32 px</li>
+        <li><span style="width:var(--s-7)"></span><code>--s-7</code> 48 px</li>
+        <li><span style="width:var(--s-8)"></span><code>--s-8</code> 72 px</li>
+      </ul>
+      <p class="small muted">Ancho máximo del contenido: 1520 px. Margen lateral fluido de 16 a 64 px.</p>
+      <h3>Radios</h3>
+      <ul class="radius-scale">
+        <li><span style="border-radius:var(--r-sm)"></span><code>--r-sm</code> 10 px</li>
+        <li><span style="border-radius:var(--r-md)"></span><code>--r-md</code> 18 px</li>
+        <li><span style="border-radius:var(--r-lg)"></span><code>--r-lg</code> 28 px</li>
+        <li><span style="border-radius:var(--r-xl)"></span><code>--r-xl</code> 40 px</li>
+        <li><span style="border-radius:var(--r-pill)"></span><code>--r-pill</code></li>
+      </ul>
+      <h3>Sombras</h3>
+      <ul class="radius-scale">
+        <li><span style="box-shadow:var(--sh-soft);border-radius:var(--r-md)"></span><code>--sh-soft</code> reposo</li>
+        <li><span style="box-shadow:var(--sh-lift);border-radius:var(--r-md)"></span><code>--sh-lift</code> elevación</li>
+      </ul>
+      <p class="small muted">Las sombras están teñidas con el marrón del fondo, no con negro, para que se integren a la paleta cálida.</p>
+    </section>
+
+    <section class="prose-section" id="componentes" aria-labelledby="comp-t">
+      <h2 id="comp-t">Componentes</h2>
+
+      <h3>Botones</h3>
+      <div class="ds-demo">
+        <div class="btn-row">
+          <a class="btn btn--primary" href="#componentes">Principal<svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></a>
+          <a class="btn btn--ghost" href="#componentes">Secundario</a>
+          <a class="btn btn--dark" href="#componentes">Oscuro</a>
+          <button class="btn btn--sm" type="button" aria-pressed="true">Activo</button>
+          <button class="btn btn--sm" type="button" disabled>Deshabilitado</button>
+        </div>
+        <p class="small muted">Alto mínimo de 48 px (44 px en el tamaño chico). Al pasar el mouse suben 2 px; al presionar, bajan y se achican levemente para dar respuesta física.</p>
+      </div>
+
+      <h3>Chips y sello de IA</h3>
+      <div class="ds-demo">
+        <div class="chip-row">
+          <span class="chip">Unidad 2</span>
+          <span class="chip"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-clock"/></svg>1:18</span>
+          <span class="chip chip--ia"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-sparkle"/></svg>Generado con IA generativa</span>
+        </div>
+        <p class="small muted">El sello oscuro es el único que se usa para rotular contenido sintético, en todo el sitio.</p>
+      </div>
+
+      <h3>Tarjeta de recurso</h3>
+      <div class="ds-demo ds-demo--card">
+        <article class="rcard rcard--animacion">
+          <div class="rcard__top"><span class="rcard__ico"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-film"/></svg></span><span class="chip">Unidad 3</span></div>
+          <h4 class="ds-rcard-title"><a href="recursos/animacion.html">Los monstruos de Berni</a></h4>
+          <p>Toda la tarjeta es un solo enlace: un único destino por tarjeta, sin enlaces repetidos para el lector de pantalla.</p>
+          <div class="rcard__meta"><span>Video · 1:18</span><span class="rcard__go"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></span></div>
+        </article>
+      </div>
+
+      <h3>Avisos</h3>
+      <div class="ds-demo">
+        <p class="callout"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-info"/></svg><span>Aviso informativo, por ejemplo la aclaración de que el caso es ficticio.</span></p>
+        <p class="callout callout--mint"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-shield"/></svg><span>Aviso de cuidado o privacidad.</span></p>
+      </div>
+
+      <h3>Prompt citado</h3>
+      <div class="ds-demo">
+        <blockquote class="prompt">
+          <p>“Así se muestra un prompt usado para producir un recurso.”</p>
+          <cite>Fuente del prompt, Equipo 03.</cite>
+        </blockquote>
+        <blockquote class="prompt prompt--soft">
+          <p>“Variante clara, para iteraciones previas o prompts secundarios.”</p>
+          <cite>Fuente del prompt, Equipo 03.</cite>
+        </blockquote>
+      </div>
+
+      <h3>Desplegable</h3>
+      <div class="ds-demo">
+        <details class="disclosure">
+          <summary>Alternativa accesible<span class="disclosure__sum-ico"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-plus"/></svg></span></summary>
+          <div class="disclosure__body"><p>Se usa para transcripciones, audiodescripciones y procesos de producción: el contenido está siempre en el HTML y se puede leer o imprimir.</p></div>
+        </details>
+      </div>
+
+      <h3>Otros componentes del sitio</h3>
+      <ul class="ds-list">
+        <li><strong>Secuencia de pictogramas</strong>: vista de a una viñeta, grilla e impresión A4 apaisada. <a href="recursos/historia-social.html#recurso">Verla</a></li>
+        <li><strong>Video con facade</strong>: miniatura y botón; el reproductor de youtube-nocookie se carga recién al hacer clic. <a href="recursos/animacion.html#recurso">Verlo</a></li>
+        <li><strong>Reproductor de audio</strong> nativo con descarga y transcripción. <a href="recursos/podcast.html#recurso">Verlo</a></li>
+        <li><strong>Asistente guiado</strong>: historial con <code>role="log"</code>, opciones como botones y panel flotante. <a href="asistente.html">Verlo</a></li>
+        <li><strong>Tarjeta de créditos</strong>, presente en cada recurso. <a href="recursos/video.html#creditos">Verla</a></li>
+      </ul>
+    </section>
+
+    <section class="prose-section" id="iconos" aria-labelledby="iconos-t">
+      <h2 id="iconos-t">Iconos</h2>
+      <p>Un set propio de iconos de trazo, dibujado en SVG con grosor 1,75 y extremos redondeados, para que coincidan con las formas suaves de la tipografía. Son decorativos (<code>aria-hidden</code>): el texto siempre acompaña.</p>
+      <ul class="ds-icons"><li><span class="ds-icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></span><code>i-arrow</code></li><li><span class="ds-icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow-left"/></svg></span><code>i-arrow-left</code></li><li><span class="ds-icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-chevron"/></svg></span><code>i-chevron</code></li><li><span class="ds-icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-menu"/></svg></span><code>i-menu</code></li><li><span class="ds-icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-close"/></svg></span><code>i-close</code></li><li><span class="ds-icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-book"/></svg></span><code>i-book</code></li><li><span class="ds-icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-film"/></svg></span><code>i-film</code></li><li><span class="ds-icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-headphones"/></svg></span><code>i-headphones</code></li><li><span class="ds-icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-video"/></svg></span><code>i-video</code></li><li><span class="ds-icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-chat"/></svg></span><code>i-chat</code></li><li><span class="ds-icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-sparkle"/></svg></span><code>i-sparkle</code></li><li><span class="ds-icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-leaf"/></svg></span><code>i-leaf</code></li><li><span class="ds-icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-print"/></svg></span><code>i-print</code></li><li><span class="ds-icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-download"/></svg></span><code>i-download</code></li><li><span class="ds-icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-play"/></svg></span><code>i-play</code></li><li><span class="ds-icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-external"/></svg></span><code>i-external</code></li><li><span class="ds-icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-plus"/></svg></span><code>i-plus</code></li><li><span class="ds-icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg></span><code>i-check</code></li><li><span class="ds-icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-users"/></svg></span><code>i-users</code></li><li><span class="ds-icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-eye"/></svg></span><code>i-eye</code></li><li><span class="ds-icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-shield"/></svg></span><code>i-shield</code></li><li><span class="ds-icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-scale"/></svg></span><code>i-scale</code></li><li><span class="ds-icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-lock"/></svg></span><code>i-lock</code></li><li><span class="ds-icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-map"/></svg></span><code>i-map</code></li><li><span class="ds-icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-heart"/></svg></span><code>i-heart</code></li><li><span class="ds-icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-info"/></svg></span><code>i-info</code></li><li><span class="ds-icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-clock"/></svg></span><code>i-clock</code></li><li><span class="ds-icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-grid"/></svg></span><code>i-grid</code></li><li><span class="ds-icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-slides"/></svg></span><code>i-slides</code></li><li><span class="ds-icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-home"/></svg></span><code>i-home</code></li><li><span class="ds-icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-blocks"/></svg></span><code>i-blocks</code></li><li><span class="ds-icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-compass"/></svg></span><code>i-compass</code></li></ul>
+    </section>
+
+    <section class="prose-section" id="movimiento" aria-labelledby="mov-t">
+      <h2 id="mov-t">Movimiento</h2>
+      <p>El movimiento es lento y suave: las secciones aparecen al hacer scroll, las tarjetas se elevan al pasar el mouse y la decoración flota. Solo se animan <code>transform</code> y <code>opacity</code>, para que sea fluido también en celulares.</p>
+      <div class="table-wrap" role="region" aria-labelledby="tabla-mov" tabindex="0">
+        <table>
+          <caption id="tabla-mov">Tabla 1. Curvas y duraciones</caption>
+          <thead><tr><th scope="col">Token</th><th scope="col">Valor</th><th scope="col">Uso</th></tr></thead>
+          <tbody>
+            <tr><th scope="row"><code>--ease-out</code></th><td>cubic-bezier(0.16, 1, 0.3, 1)</td><td>Apariciones y cambios de color</td></tr>
+            <tr><th scope="row"><code>--ease-spring</code></th><td>cubic-bezier(0.34, 1.56, 0.64, 1)</td><td>Botones y flechas, con un rebote leve</td></tr>
+            <tr><th scope="row"><code>--dur</code></th><td>0,35 s (0 s en Modo calma)</td><td>Transiciones de interfaz</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Nada se reproduce solo, no hay parpadeos y se respeta <code>prefers-reduced-motion</code>.</p>
+    </section>
+
+    <section class="prose-section" id="modo-calma" aria-labelledby="calma-t">
+      <h2 id="calma-t">Modo calma</h2>
+      <p>Un botón del encabezado cambia todo el sitio a una versión de baja estimulación sensorial, coherente con el criterio aplicado en la animación (paleta de baja saturación y ritmo lento). La preferencia se recuerda en el navegador.</p>
+      <ul class="ds-list">
+        <li>Desatura la paleta: tintes casi neutros y acento terracota apagado (<code>#7E4E3E</code>, 6,2:1).</li>
+        <li>Apaga todas las animaciones y transiciones.</li>
+        <li>Oculta las formas decorativas.</li>
+        <li>Aumenta el interlineado a 1,85 y suma un poco de espacio entre letras y palabras.</li>
+      </ul>
+      <div class="btn-row"><button class="btn" type="button" aria-pressed="false" data-calma-toggle><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-leaf"/></svg>Probar el Modo calma</button></div>
+    </section>
+
+    <section class="prose-section" id="accesibilidad" aria-labelledby="a11y-t">
+      <h2 id="a11y-t">Accesibilidad (WCAG 2.1 AA)</h2>
+      <ul class="ds-checks">
+        <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>Contraste de texto de 4,5:1 o más, en modo normal y en Modo calma.</li>
+        <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>Navegación completa por teclado, foco visible y enlace “Saltar al contenido”.</li>
+        <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>Un solo título principal por página y landmarks de encabezado, navegación, contenido y pie.</li>
+        <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>Objetivos táctiles de 44 × 44 px como mínimo.</li>
+        <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>Videos con subtítulos, audio con transcripción y animación con audiodescripción.</li>
+        <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>Menú, submenú, menú mobile y asistente con atributos ARIA, cierre con Esc y foco atrapado cuando corresponde.</li>
+        <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>Sin desplazamiento horizontal desde 320 px; el menú pasa a hamburguesa cuando no entra.</li>
+        <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>La navegación y los contenidos funcionan sin JavaScript; el asistente ofrece su versión en texto.</li>
+      </ul>
+    </section>
+
+    <section class="prose-section" id="codigo" aria-labelledby="codigo-t">
+      <h2 id="codigo-t">En el código</h2>
+      <p>El sistema vive en tres hojas de estilo, sin frameworks ni paso de compilación:</p>
+      <ul class="ds-list">
+        <li><code>assets/css/tokens.css</code>: colores, tipografía, espaciado, radios, sombras, movimiento y la variante de Modo calma.</li>
+        <li><code>assets/css/base.css</code>: estilos base, layout y utilidades de accesibilidad.</li>
+        <li><code>assets/css/components.css</code>: todos los componentes de esta página.</li>
+      </ul>
+      <p>Para cambiar la paleta o la tipografía de todo el sitio alcanza con editar los tokens. El código fuente está en <a href="https://github.com/lpedaci/iag-tif">GitHub</a>.</p>
+    </section>
+  </div>
+</div>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="site-footer__grid">
+      <div>
+        <a class="brand" href="index.html"><svg class="brand__mark" viewBox="0 0 40 40" aria-hidden="true" focusable="false"><path d="M6 37V19a14 14 0 0 1 28 0v18z" fill="var(--c-accent)"/><path d="M13 37V21a7 7 0 0 1 14 0v16z" fill="var(--t-butter)"/><circle cx="23.2" cy="29" r="1.6" fill="var(--c-ink)"/><circle cx="33.5" cy="7" r="4.5" fill="var(--d-mint)"/></svg><span class="brand__text">El aula que incluye<small>IA generativa como soporte de inclusión en el nivel inicial</small></span></a>
+        <p class="seal" style="margin-top:1.5rem"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-sparkle"/></svg><span><strong>Sello de transparencia.</strong> Recursos generados con IA generativa y validados por el Equipo 03.</span></p>
+      </div>
+      <nav aria-labelledby="navegacion-pie"><h2 id="navegacion-pie">Navegación</h2><ul><li><a href="index.html">Inicio</a></li><li><a href="proyecto.html">El proyecto</a></li><li><a href="recursos/index.html">Recursos</a></li><li><a href="asistente.html">Preguntale a Berni</a></li><li><a href="en-la-sala.html">En la sala</a></li><li><a href="etica.html">Ética</a></li><li><a href="creditos.html">Créditos</a></li></ul></nav>
+      <nav aria-labelledby="pie-mas"><h2 id="pie-mas">Transparencia</h2><ul>
+        <li><a href="mapa-del-sitio.html">Mapa del sitio</a></li>
+        <li><a href="sistema-de-diseno.html">Sistema de diseño</a></li>
+        <li><a href="creditos.html">Créditos y referencias</a></li>
+        <li><a href="etica.html">Uso responsable de la IA</a></li>
+        <li><a href="https://github.com/lpedaci/iag-tif">Código fuente en GitHub</a></li>
+      </ul></nav>
+    </div>
+    <div class="site-footer__bottom">
+      <p><strong>Equipo 03</strong> · Argüello, Clara · Costas, Silvia · Pedaci, Lourdes</p>
+      <p>Licenciatura en Tecnología Educativa, UTN FRBA · 2026</p>
+    </div>
+  </div>
+</footer>
+<a class="chat-launcher" href="asistente.html" aria-label="Preguntale a Berni" aria-haspopup="dialog" aria-expanded="false" aria-controls="chat-panel" data-chat-open>
+  <span class="chat-launcher__ring"><img src="assets/img/berni/berni-avatar.webp" alt="" width="48" height="48"></span><span class="chat-launcher__text">Preguntale a Berni</span>
+</a>
+<div class="chat-panel" id="chat-panel" hidden>
+  <div class="chat-panel__box" role="dialog" aria-modal="true" aria-labelledby="chat-panel-title">
+    <div class="chat" data-chat data-chat-lazy>
+  <div class="chat__head">
+    <img class="chat__avatar" src="assets/img/berni/berni-avatar.webp" alt="" width="44" height="44">
+    <div><p class="chat__title" id="chat-panel-title">Preguntale a Berni</p><p class="chat__status">Asistente guiado por opciones</p></div>
+    <button class="btn btn--sm btn--ghost" type="button" data-chat-reset>Reiniciar</button><button class="icon-btn chat-panel__close" type="button" data-chat-close><span class="visually-hidden">Cerrar el asistente</span><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-close"/></svg></button>
+  </div>
+  <div class="chat__log" role="log" aria-live="polite" aria-labelledby="chat-panel-title" tabindex="0">
+    <div class="skeleton" aria-hidden="true"><span></span><span></span><span></span></div>
+  </div>
+  <div class="chat__foot"><p>Berni responde con textos revisados por el Equipo 03. No hay campo para escribir: así nadie carga datos personales.</p></div>
+</div>
+  </div>
+</div>
+</body>
+</html>

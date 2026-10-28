@@ -8,6 +8,35 @@ Espacio digital del Equipo 03 para el Trabajo Integrador Final (TIF) de la mater
 
 Un mismo contenido, el proyecto de plástica de sala de 5 años “Los monstruos de Berni y Bortusk Leer”, contado en cinco formatos para que cada niña y cada niño tenga una puerta de entrada: texto con pictogramas, animación, audio, video y un asistente guiado.
 
+## De qué se trata, desde UX/UI
+
+Es un sitio educativo multipágina pensado para dos situaciones de uso muy distintas: una docente que lo explora sola en la computadora para planificar, y una sala de 5 años que mira un recurso proyectado o en una tablet, siempre con una persona adulta al lado. Las decisiones de diseño salen de esa tensión.
+
+- **Arquitectura de información:** dos niveles de profundidad, toda página a dos clics de Inicio, cinco recursos con la misma plantilla (para qué, recurso, alternativa accesible, cómo se produjo, cómo usarlo en la sala, créditos) y navegación anterior/siguiente en el orden de las unidades. Cuatro recorridos diseñados por perfil: docente nueva, docente que busca un recurso, familia y evaluación.
+- **Un recurso, muchas puertas:** cada formato tiene su color y su icono, pero la estructura no cambia. El DUA (Diseño Universal para el Aprendizaje) es a la vez el tema del sitio y su criterio de diseño.
+- **Baja estimulación a pedido:** el Modo calma desatura la paleta, apaga el movimiento y la decoración y aumenta el interlineado. Cada recurso tiene además una zona neutra “para mirar con los chicos”.
+- **Asistente guiado por opciones, sin campo de texto:** privacidad por diseño (nadie puede cargar datos de chicos), respuestas siempre revisadas y una interacción más simple que redactar una pregunta.
+- **Accesibilidad WCAG 2.1 AA** como requisito, no como agregado: contrastes calculados, teclado, lectores de pantalla, alternativas en texto de todo lo audiovisual y funcionamiento sin JavaScript.
+- **Transparencia:** el uso de IA se rotula en cada recurso con el mismo sello, con créditos, prompts reales y cita APA 7.
+
+El **[sistema de diseño](https://lpedaci.github.io/iag-tif/sistema-de-diseno.html)** documenta principios, color, tipografía, espaciado, componentes, iconos, movimiento, Modo calma y accesibilidad, usando los mismos tokens y componentes del código. También está enlazado desde la sección Transparencia del pie de cada página.
+
+## Lenguajes y herramientas
+
+| Área | Qué se usó |
+|---|---|
+| Lenguajes | HTML5 semántico, CSS3 (custom properties, Grid, Flexbox, `clamp()`, `:has()`, `color-mix()`), JavaScript vanilla (ES5+, sin dependencias) |
+| Datos | JSON (`data/recursos.json`, `data/chatbot-kb.json`) |
+| Tipografía | Google Fonts: Fraunces y Lexend |
+| Iconos | Set SVG propio en sprite inline |
+| Medios | WebP con respaldo PNG, MP3 propio, YouTube con `youtube-nocookie.com` y patrón facade |
+| Accesibilidad | ARIA (menús, diálogos, `role="log"`, `aria-live`), `prefers-reduced-motion`, Modo calma |
+| Pruebas | Node.js (`tests/chatbot-arbol.js`), verificación de enlaces y anclas, controles de contraste WCAG |
+| Imágenes | Python con Pillow (recorte de pictogramas, favicon, imagen Open Graph) |
+| Publicación | Git, GitHub y GitHub Pages (sin build, con `.nojekyll`) |
+| IA generativa en los recursos | Gemini, ChatGPT, Canva Contenido Mágico, Veo 3.1 Fast, Flow, Suno, ElevenLabs y Claude (detalle en [`creditos.html`](creditos.html)) |
+| Apoyo en el desarrollo | Claude Code (Anthropic), declarado en créditos |
+
 ---
 
 ## Recursos
@@ -40,6 +69,7 @@ Cada página de recurso tiene la misma estructura: para qué y para quién, el r
 ├── etica.html                  Uso responsable de la IA + reflexión final
 ├── creditos.html               Créditos por recurso, referencias APA 7, declaración de uso de IA
 ├── mapa-del-sitio.html         Mapa del sitio y recorridos sugeridos
+├── sistema-de-diseno.html      Sistema de diseño documentado con los componentes reales
 ├── 404.html                    Página de error (rutas absolutas a /iag-tif/)
 ├── sitemap.xml · robots.txt · favicon.ico · .nojekyll
 ├── assets/
@@ -126,9 +156,12 @@ Verificado en esta versión: 0 enlaces internos rotos, una sola `h1` por página
 
 ## Sistema visual
 
+Resumen; el detalle completo está en [`sistema-de-diseno.html`](sistema-de-diseno.html).
+
+
 - **Paleta:** neutros crema cálidos, un único acento de acción coral terracota y tintes pastel por recurso (manteca, cielo, lavanda, durazno, menta). Todo vive en `assets/css/tokens.css`.
 - **Tipografía:** Fraunces solo para títulos grandes (serif cálida, editorial) y Lexend para el texto, la navegación y los botones. Lexend tiene letras amplias, aberturas abiertas y espaciado generoso, pensadas para mejorar la fluidez de lectura; es más cómoda para personas con miopía o astigmatismo que una sans condensada en tamaños chicos.
-- **Navegación:** menú completo en pastilla desde 1280 px, siempre que entre con aire; si no entra (pantalla angosta, zoom o letra agrandada), `main.js` lo detecta y muestra el botón de menú, que abre la navegación a pantalla completa. Al publicar cambios de CSS o JS, cambiá el parámetro `?v=` de los enlaces a esos archivos en todas las páginas (hoy `?v=20261027j`), así nadie ve estilos viejos guardados en caché.
+- **Navegación:** menú completo en pastilla desde 1280 px, siempre que entre con aire; si no entra (pantalla angosta, zoom o letra agrandada), `main.js` lo detecta y muestra el botón de menú, que abre la navegación a pantalla completa. Al publicar cambios de CSS o JS, cambiá el parámetro `?v=` de los enlaces a esos archivos en todas las páginas (hoy `?v=20261027l`), así nadie ve estilos viejos guardados en caché.
 - **Componentes:** grilla bento asimétrica de recursos, formas orgánicas decorativas (estrella, flor, destellos) que se ocultan en Modo calma, paneles de esquinas amplias y una zona neutra “para mirar con los chicos” en cada recurso.
 
 ## Ética y privacidad
