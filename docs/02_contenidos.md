@@ -181,8 +181,8 @@ Secuencia sugerida para la semana del proyecto de plástica:
 ## E. Página "Uso responsable de la IA"
 
 Cinco dimensiones, tomadas de los TP del equipo:
-- **Transparencia:** se declara el uso de IA en cada recurso; Veo incorpora SynthID; las voces sintéticas se presentan como tales, en línea con su uso adecuado "siempre y cuando se presenten como tales" (Yaguana Romero et al., 2022, p. 17).
-- **Responsabilidad:** las herramientas sugieren, el criterio pedagógico valida. La ingeniería de prompts es la técnica para "guiar y controlar el comportamiento de los sistemas de inteligencia artificial mediante instrucciones específicas" (Torrealba Dugarte, 2024, p. 261), y requiere una eduética que oriente ese control.
+- **Transparencia:** se declara el uso de IA en cada recurso; Veo incorpora SynthID; las voces sintéticas se presentan como tales, en línea con su uso adecuado "siempre y cuando se presenten como tales" (Fernández, como se citó en Yaguana Romero et al., 2022, p. 17).
+- **Responsabilidad:** las herramientas sugieren, el criterio pedagógico valida. La ingeniería de prompts es la técnica para "guiar y controlar el comportamiento de los sistemas de inteligencia artificial mediante instrucciones específicas" (Torrealba Dugarte, 2024, p. 262), y requiere una eduética que oriente ese control.
 - **Sesgos:** se revisó que textos e imágenes no incorporaran estereotipos sobre el autismo ni supuestos sobre gustos o capacidades; los personajes son monstruos y no representaciones de niños reales.
 - **Equidad:** se priorizaron planes gratuitos o accesibles y recursos reutilizables; la guía de UNESCO IESALC advierte problemas de "acceso y equidad" (Sabzalieva y Valentini, 2023, p. 12).
 - **Privacidad:** casos ficticios y anonimizados, sin nombres, diagnósticos ni instituciones; planos sin rostros en el video; siguiendo la recomendación de no ingresar información confidencial en las apps de Gemini (Google, 2026a). El asistente no pide ni guarda datos personales.
