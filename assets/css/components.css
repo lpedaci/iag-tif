@@ -1478,3 +1478,22 @@ mark.key {
 .ink-panel mark.key, .prompt mark.key { background: linear-gradient(transparent 60%, rgba(244, 183, 154, 0.38) 60%); color: var(--c-on-ink); }
 [data-calma="on"] mark.key { background: none; text-decoration: underline; text-decoration-color: var(--c-line-strong); text-decoration-thickness: 2px; text-underline-offset: 0.18em; }
 @media print { mark.key { background: none; font-weight: 700; } }
+
+/* Integrantes con enlace a LinkedIn en el pie */
+.team-links { display: flex; flex-wrap: wrap; align-items: center; gap: 0.15rem 0; }
+.team-links__item { display: inline-flex; align-items: center; white-space: nowrap; }
+.team-links__sep { margin-inline: 0.5em; color: var(--c-line-strong); }
+.team-links__in {
+  display: inline-grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  margin: -10px -6px -10px -4px;
+  border-radius: 50%;
+  color: #0A66C2;
+  text-decoration: none;
+  transition: background-color var(--dur) var(--ease-out), transform var(--dur) var(--ease-spring);
+}
+.team-links__in .icon { width: 1.05rem; height: 1.05rem; }
+.team-links__in:hover { background: var(--c-surface); color: #004182; transform: translateY(-1px); }
+[data-calma="on"] .team-links__in { color: var(--c-ink-soft); }
