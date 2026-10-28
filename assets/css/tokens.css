@@ -71,7 +71,7 @@
   --s-9: 7rem;
   --gutter: clamp(1rem, 0.4rem + 3vw, 4rem);
   --maxw: 1520px;
-  --maxw-text: 82ch;
+  --maxw-text: none;
 
   /* Radios */
   --r-sm: 0.625rem;
