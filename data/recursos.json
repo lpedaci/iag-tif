@@ -1,0 +1,96 @@
+{
+  "autoras": ["Argüello, Clara", "Costas, Silvia", "Pedaci, Lourdes"],
+  "equipo": "Equipo 03",
+  "rotulo_ia": "Contenido generado con IA generativa y validado por el Equipo 03.",
+  "recursos": [
+    {
+      "id": "historia-social",
+      "unidad": 2,
+      "titulo": "Hoy creamos nuestro monstruo",
+      "subtitulo": "Historia social con pictogramas",
+      "formato": "Texto e imagen",
+      "duracion": "9 viñetas",
+      "pagina": "recursos/historia-social.html",
+      "url_externa": null,
+      "herramientas_ia": [
+        { "nombre": "Gemini 3.6 Flash con razonamiento extendido (Google)", "rol": "Redacción de la historia social y lista de pictogramas" },
+        { "nombre": "Gemini (Google)", "rol": "Generación de la imagen de los pictogramas" }
+      ],
+      "edicion_no_ia": [],
+      "apa": "Argüello, C., Costas, S., y Pedaci, L. (2026). Hoy creamos nuestro monstruo [Historia social con pictogramas generada con IA]. El aula que incluye. https://lpedaci.github.io/iag-tif/recursos/historia-social.html"
+    },
+    {
+      "id": "animacion",
+      "unidad": 3,
+      "titulo": "Los monstruos de Berni: una animación para la inclusión en la primera infancia",
+      "subtitulo": "Animación digital",
+      "formato": "Video",
+      "duracion": "1:18",
+      "pagina": "recursos/animacion.html",
+      "youtube_id": "EffCv8EIAwI",
+      "url_externa": "https://youtu.be/EffCv8EIAwI",
+      "herramientas_ia": [
+        { "nombre": "ChatGPT (OpenAI)", "rol": "Diseño del personaje Berni (imagen de referencia)" },
+        { "nombre": "Contenido Mágico (Canva)", "rol": "Escena de apertura" },
+        { "nombre": "Veo 3.1 Fast (Google, plan AI Pro)", "rol": "Escenas animadas, modo imagen a video" },
+        { "nombre": "Suno", "rol": "Música de fondo" }
+      ],
+      "edicion_no_ia": ["Camtasia (montaje, audio y placa de créditos)"],
+      "apa": "Pedaci, L. [El servidor de Lourdes]. (27 de agosto de 2026). Los monstruos de Berni: una animación para la inclusión en la primera infancia [Video]. YouTube. https://youtu.be/EffCv8EIAwI"
+    },
+    {
+      "id": "podcast",
+      "unidad": 4,
+      "titulo": "El aula que incluye: crear contenido educativo con IA generativa",
+      "subtitulo": "Podcast",
+      "formato": "Audio",
+      "duracion": "2:58",
+      "pagina": "recursos/podcast.html",
+      "audio_local": "assets/audio/podcast-el-aula-que-incluye.mp3",
+      "url_externa": "https://drive.google.com/file/d/1LhOBEpT0pVuegL7HiBLqOZKyaX_B_HoB/view",
+      "herramientas_ia": [
+        { "nombre": "Claude Opus 4.8 (Anthropic)", "rol": "Guion en tres iteraciones" },
+        { "nombre": "ElevenLabs Studio (Eleven Multilingual v2)", "rol": "Síntesis de las dos voces (Andrea y Billy) y cortina de créditos" },
+        { "nombre": "Suno", "rol": "Cortina musical" }
+      ],
+      "edicion_no_ia": ["Camtasia (postproducción)"],
+      "evaluadas_no_usadas": ["Murf AI"],
+      "apa": "Pedaci, L. (11 de septiembre de 2026). Equipo 03 · Episodio El aula que incluye: crear contenido educativo con IA generativa [Podcast]. Google Drive. https://drive.google.com/file/d/1LhOBEpT0pVuegL7HiBLqOZKyaX_B_HoB/view"
+    },
+    {
+      "id": "video",
+      "unidad": 5,
+      "titulo": "Adaptar para incluir: inteligencia artificial en la educación inicial",
+      "subtitulo": "Video documental",
+      "formato": "Video",
+      "duracion": "2:04",
+      "pagina": "recursos/video.html",
+      "youtube_id": "qJ5nEvhGr4I",
+      "url_externa": "https://youtu.be/qJ5nEvhGr4I",
+      "herramientas_ia": [
+        { "nombre": "Flow (Google): Omni 1.1 Flash y Veo 3.1 Lite", "rol": "Generación y extensión de escenas" },
+        { "nombre": "ElevenLabs (voz y Music v2)", "rol": "Voz en off y música" },
+        { "nombre": "Claude Opus 4.8 (Anthropic)", "rol": "Guion de la voz en off" }
+      ],
+      "edicion_no_ia": ["Camtasia (montaje)", "YouTube (subtítulos automáticos)"],
+      "evaluadas_no_usadas": ["Seedance 1.0 vía CapCut"],
+      "apa": "Pedaci, L. [El servidor de Lourdes]. (24 de septiembre de 2026). Adaptar para incluir: inteligencia artificial en la educación inicial [Video]. YouTube. https://youtu.be/qJ5nEvhGr4I"
+    },
+    {
+      "id": "asistente",
+      "unidad": 6,
+      "titulo": "Preguntale a Berni",
+      "subtitulo": "Asistente guiado (chatbot por opciones)",
+      "formato": "Interactivo",
+      "duracion": null,
+      "pagina": "asistente.html",
+      "url_externa": null,
+      "herramientas_ia": [
+        { "nombre": "Claude (Anthropic)", "rol": "Redacción de las respuestas, validadas por el equipo" },
+        { "nombre": "Claude Code (Anthropic)", "rol": "Apoyo en la programación del asistente" }
+      ],
+      "edicion_no_ia": [],
+      "apa": "Argüello, C., Costas, S., y Pedaci, L. (2026). Preguntale a Berni [Chatbot]. El aula que incluye. https://lpedaci.github.io/iag-tif/asistente.html"
+    }
+  ]
+}

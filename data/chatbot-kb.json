@@ -1,0 +1,260 @@
+{
+  "meta": {
+    "nombre": "Preguntale a Berni",
+    "tipo": "asistente guiado por opciones (sin texto libre)",
+    "version": "1.0",
+    "nota": "Árbol validado contra docs/02_contenidos.md. El motor agrega solo los botones 'Volver' e 'Inicio'."
+  },
+  "inicio": "perfil",
+  "nodos": {
+    "perfil": {
+      "mensaje": "¡Hola! Soy Berni, el guía de El aula que incluye. Soy un asistente automático: elegís una opción y te oriento por el sitio. Para empezar, ¿quién sos?",
+      "opciones": [
+        { "texto": "Soy docente", "destino": "menu", "perfil": "docente" },
+        { "texto": "Soy de una familia", "destino": "menu", "perfil": "familia" },
+        { "texto": "Vengo a evaluar el trabajo", "destino": "menu", "perfil": "evaluacion" },
+        { "texto": "Solo estoy mirando", "destino": "menu", "perfil": "visita" }
+      ]
+    },
+    "menu": {
+      "mensaje": "¿Qué querés hacer?",
+      "opciones": [
+        { "texto": "¿Por dónde empiezo?", "destino": "empezar" },
+        { "texto": "Ver los recursos", "destino": "recursos" },
+        { "texto": "Usar los recursos en la sala", "destino": "sala" },
+        { "texto": "Entender un concepto", "destino": "conceptos" },
+        { "texto": "Saber cómo usaron la IA", "destino": "ia" },
+        { "texto": "Quiénes hicieron el sitio", "destino": "equipo" }
+      ]
+    },
+    "empezar": {
+      "mensaje_por_perfil": {
+        "docente": "Te sugiero empezar por la historia social con pictogramas, que se usa directamente en la sala, y después pasar por la guía En la sala.",
+        "familia": "Te sugiero mirar la animación de Berni con los chicos y después leer juntos la historia social.",
+        "evaluacion": "Te sugiero recorrer El proyecto, después los cinco recursos y cerrar con Créditos y Uso responsable de la IA. El Mapa del sitio muestra todo junto.",
+        "visita": "Te sugiero empezar por El proyecto, que cuenta para qué hicimos este sitio."
+      },
+      "enlace_por_perfil": {
+        "docente": { "texto": "Ir a la historia social", "href": "recursos/historia-social.html" },
+        "familia": { "texto": "Ir a la animación", "href": "recursos/animacion.html" },
+        "evaluacion": { "texto": "Ir al mapa del sitio", "href": "mapa-del-sitio.html" },
+        "visita": { "texto": "Ir a El proyecto", "href": "proyecto.html" }
+      },
+      "opciones": [
+        { "texto": "Ver todos los recursos", "destino": "recursos" },
+        { "texto": "Cómo usarlos en la sala", "destino": "sala" }
+      ]
+    },
+    "recursos": {
+      "mensaje": "Hay cinco recursos, cada uno en un formato distinto, para que el mismo contenido tenga varias puertas de entrada. ¿Cuál querés conocer?",
+      "enlace": { "texto": "Ver todos los recursos", "href": "recursos/index.html" },
+      "opciones": [
+        { "texto": "Historia social con pictogramas", "destino": "r-historia" },
+        { "texto": "Animación de Berni", "destino": "r-animacion" },
+        { "texto": "Podcast", "destino": "r-podcast" },
+        { "texto": "Video documental", "destino": "r-video" },
+        { "texto": "Este asistente", "destino": "r-asistente" }
+      ]
+    },
+    "r-historia": {
+      "mensaje": "\"Hoy creamos nuestro monstruo\" es una historia social de nueve oraciones, cada una con su pictograma. Anticipa el paso del juego libre a la actividad de plástica y ofrece una estrategia si hay mucho ruido. Se puede proyectar o imprimir.",
+      "enlace": { "texto": "Ir a la historia social", "href": "recursos/historia-social.html" },
+      "opciones": [
+        { "texto": "¿Qué es una historia social?", "destino": "c-historia" },
+        { "texto": "¿Con qué IA se hizo?", "destino": "ia-historia" },
+        { "texto": "Otro recurso", "destino": "recursos" }
+      ]
+    },
+    "r-animacion": {
+      "mensaje": "Es un corto de 1:18 sin diálogos. Berni, un monstruo azul, acompaña a un compañero abrumado por el ruido hasta un rincón de calma y después al juego con el grupo. Tiene audiodescripción en texto.",
+      "enlace": { "texto": "Ver la animación", "href": "recursos/animacion.html" },
+      "opciones": [
+        { "texto": "¿Con qué IA se hizo?", "destino": "ia-animacion" },
+        { "texto": "¿Cómo la uso en la sala?", "destino": "sala" },
+        { "texto": "Otro recurso", "destino": "recursos" }
+      ]
+    },
+    "r-podcast": {
+      "mensaje": "\"El aula que incluye\" es un episodio de 2:58, a dos voces, sobre cómo llevar un mismo contenido a texto, pictogramas y audio con IA generativa. Tiene la transcripción completa.",
+      "enlace": { "texto": "Escuchar el podcast", "href": "recursos/podcast.html" },
+      "opciones": [
+        { "texto": "¿Las voces son de personas?", "destino": "ia-voces" },
+        { "texto": "Otro recurso", "destino": "recursos" }
+      ]
+    },
+    "r-video": {
+      "mensaje": "\"Adaptar para incluir\" es un documental de 2:04 sobre cómo la IA generativa ayuda a crear materiales accesibles y qué condiciones hacen falta: conectividad, formación docente y cuidado de la privacidad. Tiene subtítulos y transcripción.",
+      "enlace": { "texto": "Ver el video", "href": "recursos/video.html" },
+      "opciones": [
+        { "texto": "¿Con qué IA se hizo?", "destino": "ia-video" },
+        { "texto": "Otro recurso", "destino": "recursos" }
+      ]
+    },
+    "r-asistente": {
+      "mensaje": "Soy un asistente guiado: no tengo campo para escribir, así nadie carga datos de chicos y siempre respondo algo revisado por el equipo. Mis respuestas se redactaron con apoyo de IA y las validaron las autoras.",
+      "enlace": { "texto": "Cómo funciona el asistente", "href": "asistente.html#como-funciona" },
+      "opciones": [
+        { "texto": "Otro recurso", "destino": "recursos" },
+        { "texto": "Privacidad", "destino": "ia-privacidad" }
+      ]
+    },
+    "sala": {
+      "mensaje": "Te proponemos tres momentos. ¿Cuál te interesa?",
+      "enlace": { "texto": "Ver la guía En la sala", "href": "en-la-sala.html" },
+      "opciones": [
+        { "texto": "Antes: anticipar", "destino": "sala-antes" },
+        { "texto": "Durante: hacer", "destino": "sala-durante" },
+        { "texto": "Después: volver a mirar", "destino": "sala-despues" }
+      ]
+    },
+    "sala-antes": {
+      "mensaje": "Antes de la actividad, mirá la animación en grupo y leé la historia social con los pictogramas varias veces, en los mismos momentos del día.",
+      "enlace": { "texto": "Ir a la historia social", "href": "recursos/historia-social.html" },
+      "opciones": [
+        { "texto": "Durante: hacer", "destino": "sala-durante" },
+        { "texto": "¿Puedo imprimir los pictogramas?", "destino": "imprimir" }
+      ]
+    },
+    "sala-durante": {
+      "mensaje": "Durante la actividad, dejá la tira de pictogramas a la vista en la mesa, tené auriculares disponibles y un rincón de calma armado.",
+      "enlace": { "texto": "Ver la guía En la sala", "href": "en-la-sala.html" },
+      "opciones": [
+        { "texto": "Después: volver a mirar", "destino": "sala-despues" },
+        { "texto": "Antes: anticipar", "destino": "sala-antes" }
+      ]
+    },
+    "sala-despues": {
+      "mensaje": "Después, volvé a la animación para conversar sobre los distintos ritmos de cada quien y mostrá las obras del grupo. Recordá que los recursos son modelos: se personalizan en forma presencial, sin cargar datos reales en la IA.",
+      "enlace": { "texto": "Ver la guía En la sala", "href": "en-la-sala.html" },
+      "opciones": [
+        { "texto": "Antes: anticipar", "destino": "sala-antes" },
+        { "texto": "Privacidad", "destino": "ia-privacidad" }
+      ]
+    },
+    "imprimir": {
+      "mensaje": "Sí. En la página de la historia social hay un botón para imprimir la secuencia completa de pictogramas.",
+      "enlace": { "texto": "Ir a la historia social", "href": "recursos/historia-social.html" },
+      "opciones": [
+        { "texto": "Durante: hacer", "destino": "sala-durante" }
+      ]
+    },
+    "conceptos": {
+      "mensaje": "¿Qué concepto querés entender?",
+      "enlace": { "texto": "Ver los marcos del proyecto", "href": "proyecto.html#marcos" },
+      "opciones": [
+        { "texto": "Historia social", "destino": "c-historia" },
+        { "texto": "DUA", "destino": "c-dua" },
+        { "texto": "TPACK", "destino": "c-tpack" },
+        { "texto": "ADKAR", "destino": "c-adkar" }
+      ]
+    },
+    "c-historia": {
+      "mensaje": "Una historia social es un texto breve, en primera persona y en presente, que anticipa una situación cotidiana para volverla previsible (Gray, 2010).",
+      "enlace": { "texto": "Ver nuestra historia social", "href": "recursos/historia-social.html" },
+      "opciones": [
+        { "texto": "Otro concepto", "destino": "conceptos" },
+        { "texto": "Cómo usarla en la sala", "destino": "sala" }
+      ]
+    },
+    "c-dua": {
+      "mensaje": "El Diseño Universal para el Aprendizaje propone ofrecer varias formas de representar la información, de expresarse y de participar, para que todos tengan una puerta de entrada (Alba Pastor et al., 2014).",
+      "enlace": { "texto": "Ver los marcos", "href": "proyecto.html#marcos" },
+      "opciones": [
+        { "texto": "Otro concepto", "destino": "conceptos" },
+        { "texto": "Ver los recursos", "destino": "recursos" }
+      ]
+    },
+    "c-tpack": {
+      "mensaje": "TPACK describe el conocimiento docente como el cruce entre lo disciplinar, lo pedagógico y lo tecnológico (Mishra y Koehler, 2006). Elegir una herramienta de IA es una decisión pedagógica, no solo técnica.",
+      "enlace": { "texto": "Ver los marcos", "href": "proyecto.html#marcos" },
+      "opciones": [
+        { "texto": "Otro concepto", "destino": "conceptos" }
+      ]
+    },
+    "c-adkar": {
+      "mensaje": "ADKAR lee el cambio en cinco etapas: conciencia, deseo, conocimiento, capacidad y refuerzo (Hiatt, 2006). Lo usamos para pensar cómo un equipo docente adopta la IA con acompañamiento institucional.",
+      "enlace": { "texto": "Ver los marcos", "href": "proyecto.html#marcos" },
+      "opciones": [
+        { "texto": "Otro concepto", "destino": "conceptos" }
+      ]
+    },
+    "ia": {
+      "mensaje": "La IA generativa nos ayudó a producir cada recurso, y en cada paso decidimos y revisamos nosotras. ¿Qué querés saber?",
+      "enlace": { "texto": "Uso responsable de la IA", "href": "etica.html" },
+      "opciones": [
+        { "texto": "Qué herramientas usaron", "destino": "ia-herramientas" },
+        { "texto": "Cómo cuidaron la ética", "destino": "ia-etica" },
+        { "texto": "Qué pasa con los datos de los chicos", "destino": "ia-privacidad" }
+      ]
+    },
+    "ia-herramientas": {
+      "mensaje": "¿De qué recurso?",
+      "enlace": { "texto": "Ver todos los créditos", "href": "creditos.html" },
+      "opciones": [
+        { "texto": "Historia social", "destino": "ia-historia" },
+        { "texto": "Animación", "destino": "ia-animacion" },
+        { "texto": "Podcast", "destino": "ia-voces" },
+        { "texto": "Video", "destino": "ia-video" }
+      ]
+    },
+    "ia-historia": {
+      "mensaje": "El texto, la lista de pictogramas y la imagen de los pictogramas se hicieron con Gemini, de Google. El equipo ajustó el texto hasta dejar una idea por oración y sin datos personales.",
+      "enlace": { "texto": "Ver cómo se produjo", "href": "recursos/historia-social.html#como-se-produjo" },
+      "opciones": [
+        { "texto": "Otra herramienta", "destino": "ia-herramientas" }
+      ]
+    },
+    "ia-animacion": {
+      "mensaje": "Berni se diseñó con ChatGPT, la escena de apertura con Canva Contenido Mágico, el resto con Veo 3.1 Fast de Google y la música con Suno. El montaje se hizo en Camtasia.",
+      "enlace": { "texto": "Ver cómo se produjo", "href": "recursos/animacion.html#como-se-produjo" },
+      "opciones": [
+        { "texto": "Otra herramienta", "destino": "ia-herramientas" }
+      ]
+    },
+    "ia-voces": {
+      "mensaje": "Andrea y Billy no son personas: son voces sintéticas de ElevenLabs, y por eso lo aclaramos. El guion se escribió con apoyo de Claude y la música es de Suno. Lo revisamos y editamos nosotras.",
+      "enlace": { "texto": "Ir al podcast", "href": "recursos/podcast.html#como-se-produjo" },
+      "opciones": [
+        { "texto": "Otra herramienta", "destino": "ia-herramientas" },
+        { "texto": "Cómo cuidaron la ética", "destino": "ia-etica" }
+      ]
+    },
+    "ia-video": {
+      "mensaje": "El guion se escribió con apoyo de Claude, las escenas se generaron con Flow de Google y la voz en off y la música con ElevenLabs. Se evitaron los rostros de chicos con prompts negativos.",
+      "enlace": { "texto": "Ver cómo se produjo", "href": "recursos/video.html#como-se-produjo" },
+      "opciones": [
+        { "texto": "Otra herramienta", "destino": "ia-herramientas" }
+      ]
+    },
+    "ia-etica": {
+      "mensaje": "La IA sugiere y el equipo decide: revisamos cada resultado, evitamos estereotipos, avisamos qué contenido es sintético y priorizamos herramientas gratuitas o accesibles.",
+      "enlace": { "texto": "Uso responsable de la IA", "href": "etica.html" },
+      "opciones": [
+        { "texto": "Privacidad", "destino": "ia-privacidad" },
+        { "texto": "Qué herramientas usaron", "destino": "ia-herramientas" }
+      ]
+    },
+    "ia-privacidad": {
+      "mensaje": "Trabajamos con un caso ficticio, sin nombres, diagnósticos ni instituciones, y en el video no aparecen rostros de chicos. Si usás estas herramientas, personalizá el material en forma presencial y no cargues datos reales en la IA.",
+      "enlace": { "texto": "Ver privacidad", "href": "etica.html#privacidad" },
+      "opciones": [
+        { "texto": "Cómo cuidaron la ética", "destino": "ia-etica" }
+      ]
+    },
+    "equipo": {
+      "mensaje": "Somos Clara Argüello, Silvia Costas y Lourdes Pedaci, Equipo 03 de la Licenciatura en Tecnología Educativa de la UTN FRBA. Hicimos este sitio para la materia Gestión de recursos digitales con IA generativa.",
+      "enlace": { "texto": "Ver créditos", "href": "creditos.html" },
+      "opciones": [
+        { "texto": "Ver los recursos", "destino": "recursos" },
+        { "texto": "Ver el mapa del sitio", "destino": "mapa" }
+      ]
+    },
+    "mapa": {
+      "mensaje": "En el mapa del sitio tenés todas las páginas y los recorridos sugeridos para docentes, familias y evaluación.",
+      "enlace": { "texto": "Ir al mapa del sitio", "href": "mapa-del-sitio.html" },
+      "opciones": [
+        { "texto": "¿Por dónde empiezo?", "destino": "empezar" }
+      ]
+    }
+  }
+}

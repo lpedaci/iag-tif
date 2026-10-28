@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="es-AR" data-root="">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>El aula que incluye · IA generativa como soporte de inclusión en el nivel inicial</title>
+<meta name="description" content="Recursos accesibles para una sala de 5 años, creados con IA generativa y validados por docentes: historia social con pictogramas, animación, podcast, video y un asistente guiado.">
+<link rel="canonical" href="https://lpedaci.github.io/iag-tif/">
+<meta name="theme-color" content="#FBF7F1">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_AR">
+<meta property="og:site_name" content="El aula que incluye">
+<meta property="og:title" content="El aula que incluye · IA generativa como soporte de inclusión en el nivel inicial">
+<meta property="og:description" content="Recursos accesibles para una sala de 5 años, creados con IA generativa y validados por docentes: historia social con pictogramas, animación, podcast, video y un asistente guiado.">
+<meta property="og:url" content="https://lpedaci.github.io/iag-tif/">
+<meta property="og:image" content="https://lpedaci.github.io/iag-tif/assets/img/og/og-el-aula-que-incluye.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Berni, un monstruo azul y peludo con destellos blancos, sentado y sonriendo sobre un fondo beige.">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend:wght@300..700&amp;family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&amp;display=swap">
+<link rel="stylesheet" href="assets/css/tokens.css?v=20261027j">
+<link rel="stylesheet" href="assets/css/base.css?v=20261027j">
+<link rel="stylesheet" href="assets/css/components.css?v=20261027j">
+<script src="assets/js/calma.js?v=20261027j"></script>
+<script src="assets/js/main.js?v=20261027j" defer></script>
+
+<script src="assets/js/chatbot.js?v=20261027j" defer></script>
+</head>
+<body>
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true"><symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol><symbol id="i-arrow-left" viewBox="0 0 24 24"><path d="M19 12H5M11 6l-6 6 6 6"/></symbol><symbol id="i-chevron" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></symbol><symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h10"/></symbol><symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></symbol><symbol id="i-book" viewBox="0 0 24 24"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v15H6.5A2.5 2.5 0 0 0 4 20.5zM4 20.5A2.5 2.5 0 0 0 6.5 23H20M8.5 7.5h7"/></symbol><symbol id="i-film" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="3"/><path d="M3 9h18M8.5 4l-2 5M13.5 4l-2 5M18.5 4l-2 5"/></symbol><symbol id="i-headphones" viewBox="0 0 24 24"><path d="M4 15v-3a8 8 0 0 1 16 0v3"/><rect x="3" y="14" width="4.5" height="6.5" rx="1.6"/><rect x="16.5" y="14" width="4.5" height="6.5" rx="1.6"/></symbol><symbol id="i-video" viewBox="0 0 24 24"><rect x="2.5" y="6" width="13" height="12" rx="3"/><path d="M15.5 10.5l6-3.5v10l-6-3.5"/></symbol><symbol id="i-chat" viewBox="0 0 24 24"><path d="M20.5 12a8.5 8.5 0 0 1-12.3 7.6L3.5 20.5l1-4.4A8.5 8.5 0 1 1 20.5 12z"/><path d="M8.5 12h.01M12 12h.01M15.5 12h.01"/></symbol><symbol id="i-sparkle" viewBox="0 0 24 24"><path d="M11 3.5l1.9 5.1 5.1 1.9-5.1 1.9L11 17.5l-1.9-5.1L4 10.5l5.1-1.9zM18.5 3v4M16.5 5h4"/></symbol><symbol id="i-leaf" viewBox="0 0 24 24"><path d="M5 19.5C5 11 10 5 20 4.5c0 10-6 15-14.5 15"/><path d="M5 19.5l7.5-7.5"/></symbol><symbol id="i-print" viewBox="0 0 24 24"><path d="M7 9V3.5h10V9"/><rect x="3" y="9" width="18" height="8" rx="2"/><path d="M7 14h10v6.5H7z"/></symbol><symbol id="i-download" viewBox="0 0 24 24"><path d="M12 3.5v11.5M7 10l5 5 5-5M4.5 20.5h15"/></symbol><symbol id="i-play" viewBox="0 0 24 24"><path d="M8 5.5v13l11-6.5z" fill="currentColor" stroke="none"/></symbol><symbol id="i-external" viewBox="0 0 24 24"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></symbol><symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol><symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7"/></symbol><symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.2"/><path d="M3 19.5c.8-3.4 3.2-5 6-5s5.2 1.6 6 5"/><circle cx="17" cy="9" r="2.4"/><path d="M16.5 14c2.3 0 3.9 1.3 4.5 4"/></symbol><symbol id="i-eye" viewBox="0 0 24 24"><path d="M2.5 12S6 5.5 12 5.5 21.5 12 21.5 12 18 18.5 12 18.5 2.5 12 2.5 12z"/><circle cx="12" cy="12" r="3"/></symbol><symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3l7.5 3v5.5c0 4.5-3.2 8.3-7.5 9.5-4.3-1.2-7.5-5-7.5-9.5V6z"/><path d="M9 12l2 2 4-4"/></symbol><symbol id="i-scale" viewBox="0 0 24 24"><path d="M12 4v16M7 20h10M5 7h14M5 7l-2.5 6a2.5 2.5 0 0 0 5 0zM19 7l-2.5 6a2.5 2.5 0 0 0 5 0z"/></symbol><symbol id="i-lock" viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="9.5" rx="2.5"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></symbol><symbol id="i-map" viewBox="0 0 24 24"><path d="M9 4L3 6.5V20l6-2.5 6 2.5 6-2.5V4l-6 2.5zM9 4v13.5M15 6.5V20"/></symbol><symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 20s-7.5-4.6-7.5-10A4.3 4.3 0 0 1 12 7.4 4.3 4.3 0 0 1 19.5 10C19.5 15.4 12 20 12 20z"/></symbol><symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v5.5M12 7.5h.01"/></symbol><symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol><symbol id="i-grid" viewBox="0 0 24 24"><rect x="4" y="4" width="6.5" height="6.5" rx="1.5"/><rect x="13.5" y="4" width="6.5" height="6.5" rx="1.5"/><rect x="4" y="13.5" width="6.5" height="6.5" rx="1.5"/><rect x="13.5" y="13.5" width="6.5" height="6.5" rx="1.5"/></symbol><symbol id="i-slides" viewBox="0 0 24 24"><rect x="6" y="4.5" width="12" height="15" rx="2"/><path d="M2.5 8v8M21.5 8v8"/></symbol><symbol id="i-home" viewBox="0 0 24 24"><path d="M4 11l8-7 8 7v9H15v-6H9v6H4z"/></symbol><symbol id="i-blocks" viewBox="0 0 24 24"><rect x="3.5" y="12" width="7.5" height="8.5" rx="1.5"/><rect x="13" y="12" width="7.5" height="8.5" rx="1.5"/><rect x="8.25" y="3.5" width="7.5" height="8.5" rx="1.5"/></symbol><symbol id="i-scale-balance" viewBox="0 0 24 24"><path d="M3 12h18"/></symbol><symbol id="i-compass" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M15.5 8.5l-2 5-5 2 2-5z"/></symbol></svg>
+<a class="skip-link" href="#contenido">Saltar al contenido</a>
+<header class="site-header">
+  <div class="wrap site-header__inner">
+    <a class="brand" href="index.html" aria-current="page"><svg class="brand__mark" viewBox="0 0 40 40" aria-hidden="true" focusable="false"><path d="M6 37V19a14 14 0 0 1 28 0v18z" fill="var(--c-accent)"/><path d="M13 37V21a7 7 0 0 1 14 0v16z" fill="var(--t-butter)"/><circle cx="23.2" cy="29" r="1.6" fill="var(--c-ink)"/><circle cx="33.5" cy="7" r="4.5" fill="var(--d-mint)"/></svg><span class="brand__text">El aula que incluye</span></a>
+    <nav class="nav" aria-label="Principal"><ul class="nav__list"><li><a class="nav__link" href="index.html" aria-current="page">Inicio</a></li><li><a class="nav__link" href="proyecto.html">El proyecto</a></li><li class="nav__has-sub"><div class="nav__pair"><a class="nav__link" href="recursos/index.html">Recursos</a><button class="nav__link nav__sub-btn" type="button" aria-expanded="false" aria-controls="submenu-recursos" data-submenu-toggle><span class="visually-hidden">Mostrar recursos</span><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-chevron"/></svg></button></div><ul class="submenu" id="submenu-recursos" hidden><li><a href="recursos/historia-social.html"><span class="submenu__ico" style="--tint:var(--t-butter)"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-book"/></svg></span><span>Historia social<small>Unidad 2 · Texto e imagen</small></span></a></li><li><a href="recursos/animacion.html"><span class="submenu__ico" style="--tint:var(--t-sky)"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-film"/></svg></span><span>Animación<small>Unidad 3 · Video</small></span></a></li><li><a href="recursos/podcast.html"><span class="submenu__ico" style="--tint:var(--t-lav)"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-headphones"/></svg></span><span>Podcast<small>Unidad 4 · Audio</small></span></a></li><li><a href="recursos/video.html"><span class="submenu__ico" style="--tint:var(--t-peach)"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-video"/></svg></span><span>Video<small>Unidad 5 · Video</small></span></a></li><li class="submenu__all"><a href="recursos/index.html"><span class="submenu__ico"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-grid"/></svg></span><span>Ver todos los recursos<small>Con filtro por formato</small></span></a></li></ul></li><li><a class="nav__link" href="asistente.html">Preguntale a Berni</a></li><li><a class="nav__link" href="en-la-sala.html">En la sala</a></li><li><a class="nav__link" href="etica.html">Ética</a></li><li><a class="nav__link" href="creditos.html">Créditos</a></li></ul></nav>
+    <div class="header-tools">
+      <button class="calma-toggle" type="button" aria-pressed="false" data-calma-toggle><span class="calma-toggle__dot" aria-hidden="true"></span><span class="calma-toggle__label">Modo calma</span><span class="calma-toggle__label-short">Calma</span></button>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-mobile" data-menu-open><span class="visually-hidden">Abrir menú</span><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-menu"/></svg></button>
+      <a class="menu-nojs" href="#navegacion-pie">Menú</a>
+    </div>
+  </div>
+  <p class="visually-hidden" id="calma-aviso" aria-live="polite"></p>
+</header>
+  <div class="mobile-menu" id="menu-mobile" role="dialog" aria-modal="true" aria-label="Menú del sitio" hidden>
+    <div class="mobile-menu__top">
+      <a class="brand" href="index.html"><svg class="brand__mark" viewBox="0 0 40 40" aria-hidden="true" focusable="false"><path d="M6 37V19a14 14 0 0 1 28 0v18z" fill="var(--c-accent)"/><path d="M13 37V21a7 7 0 0 1 14 0v16z" fill="var(--t-butter)"/><circle cx="23.2" cy="29" r="1.6" fill="var(--c-ink)"/><circle cx="33.5" cy="7" r="4.5" fill="var(--d-mint)"/></svg><span class="brand__text">El aula que incluye</span></a>
+      <button class="menu-toggle" type="button" data-menu-close><span class="visually-hidden">Cerrar menú</span><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-close"/></svg></button>
+    </div>
+    <nav aria-label="Principal, versión mobile"><ul class="mobile-menu__list"><li><a href="index.html" aria-current="page">Inicio<svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></a></li><li><a href="proyecto.html">El proyecto<svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></a></li><li><a href="recursos/index.html">Recursos<svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></a><ul class="mobile-menu__sub"><li><a href="recursos/historia-social.html">Historia social</a></li><li><a href="recursos/animacion.html">Animación</a></li><li><a href="recursos/podcast.html">Podcast</a></li><li><a href="recursos/video.html">Video</a></li></ul></li><li><a href="asistente.html">Preguntale a Berni<svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></a></li><li><a href="en-la-sala.html">En la sala<svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></a></li><li><a href="etica.html">Ética<svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></a></li><li><a href="creditos.html">Créditos<svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></a></li><li><a href="mapa-del-sitio.html">Mapa del sitio<svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></a></li></ul></nav>
+    <div class="mobile-menu__foot"><button class="calma-toggle" type="button" aria-pressed="false" data-calma-toggle><span class="calma-toggle__dot" aria-hidden="true"></span><span class="calma-toggle__label">Modo calma</span><span class="calma-toggle__label-short">Calma</span></button></div>
+  </div>
+<main id="contenido" tabindex="-1">
+<section class="hero" aria-labelledby="hero-titulo">
+  <div class="wrap hero__grid">
+    <div>
+      <p class="hero__kicker rise"><img src="assets/img/logos/utn-logo.png" width="32" height="32" alt="" class="hero__kicker-logo"><span><strong>Equipo 03</strong><span class="hero__kicker-sep" aria-hidden="true">·</span>Licenciatura en Tecnología Educativa<span class="hero__kicker-sep" aria-hidden="true">·</span>UTN FRBA</span></p>
+      <h1 id="hero-titulo" class="rise" style="--i:1">El <span class="hl hl--butter">aula</span> que <span class="hl">incluye</span></h1>
+      <p class="hero__lead rise" style="--i:2"><strong>IA generativa como soporte de inclusión en el nivel inicial.</strong> Un mismo contenido contado de cinco maneras, para que cada niña y cada niño de la sala encuentre su puerta de entrada.</p>
+      <div class="btn-row rise" style="--i:3">
+        <a class="btn btn--primary" href="recursos/index.html">Ver los recursos<svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></a>
+        <a class="btn btn--ghost" href="proyecto.html">Conocer el proyecto</a>
+      </div>
+    </div>
+    <div class="hero__visual rise" style="--i:2">
+      <div class="hero__backblob deco" aria-hidden="true"></div>
+      <div class="deco deco--float" style="left:-2%;top:2%;width:22%;--x:0" aria-hidden="true"><svg viewBox="0 0 100 100"><polygon points="50.0,0.0 58.8,17.2 75.0,6.7 74.0,26.0 93.3,25.0 82.8,41.2 100.0,50.0 82.8,58.8 93.3,75.0 74.0,74.0 75.0,93.3 58.8,82.8 50.0,100.0 41.2,82.8 25.0,93.3 26.0,74.0 6.7,75.0 17.2,58.8 0.0,50.0 17.2,41.2 6.7,25.0 26.0,26.0 25.0,6.7 41.2,17.2" fill="var(--d-star)" stroke-linejoin="round"/></svg></div>
+      <div class="deco deco--spin" style="right:2%;bottom:6%;width:15%" aria-hidden="true"><svg viewBox="0 0 100 100"><ellipse cx="50" cy="26" rx="15" ry="24" fill="var(--d-flower)" transform="rotate(0 50 50)"/><ellipse cx="50" cy="26" rx="15" ry="24" fill="var(--d-flower)" transform="rotate(60 50 50)"/><ellipse cx="50" cy="26" rx="15" ry="24" fill="var(--d-flower)" transform="rotate(120 50 50)"/><ellipse cx="50" cy="26" rx="15" ry="24" fill="var(--d-flower)" transform="rotate(180 50 50)"/><ellipse cx="50" cy="26" rx="15" ry="24" fill="var(--d-flower)" transform="rotate(240 50 50)"/><ellipse cx="50" cy="26" rx="15" ry="24" fill="var(--d-flower)" transform="rotate(300 50 50)"/><circle cx="50" cy="50" r="12" fill="var(--d-star)"/></svg></div>
+      <div class="deco deco--float-slow" style="right:12%;top:-2%;width:9%" aria-hidden="true"><svg viewBox="0 0 100 100"><path d="M50 4 C54 38 62 46 96 50 C62 54 54 62 50 96 C46 62 38 54 4 50 C38 46 46 38 50 4Z" fill="var(--d-lav)"/></svg></div>
+      <div class="deco deco--float-slow" style="left:4%;bottom:-6%;width:24%" aria-hidden="true"><svg viewBox="0 0 120 80" fill="none" stroke="var(--c-ink)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 60c14-30 30 10 44-14s-10-30-2-36 22 8 18 22-20 18-8 30 34 0 44-18"/><path d="M96 38l8 6 2-10"/></svg></div>
+      <div class="hero__blob">
+        <img src="assets/img/berni/berni-900.webp" width="900" height="900" alt="Berni, un monstruo azul y peludo con destellos blancos, sentado y sonriendo." fetchpriority="high">
+      </div>
+      <div class="hero__tag hero__tag--a"><span class="hero__tag-ico"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-heart"/></svg></span><span><strong>Berni</strong>personaje propio del equipo</span></div>
+      <div class="hero__tag hero__tag--b"><span class="hero__tag-ico" style="background:var(--t-mint)"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-sparkle"/></svg></span><span><strong>Generado con IA</strong>validado por el Equipo 03</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="puertas-titulo">
+  <div class="wrap">
+    <div class="section-head section-head--split">
+      <div>
+        <p class="eyebrow">Cinco recursos, un proyecto de sala</p>
+        <h2 id="puertas-titulo">Un mismo contenido, muchas puertas de entrada</h2>
+      </div>
+      <p class="lead">Todo gira alrededor del proyecto de plástica “Los monstruos de Berni y Bortusk Leer”. Texto, imagen, animación, audio y video, más un asistente que orienta el recorrido.</p>
+    </div>
+
+    <div class="bento">
+      <article class="rcard rcard--historia reveal">
+        <div class="rcard__top"><span class="rcard__ico"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-book"/></svg></span><span class="chip">Unidad 2</span></div>
+        <h3><a href="recursos/historia-social.html">Hoy creamos nuestro monstruo</a></h3>
+        <p>Historia social con pictogramas que anticipa el paso del juego libre a la actividad de plástica. Para proyectar o imprimir.</p>
+        <div class="rcard__pictos" aria-hidden="true">
+          <img src="assets/img/historia-social/02.webp" width="436" height="298" alt="" loading="lazy">
+          <img src="assets/img/historia-social/04.webp" width="436" height="298" alt="" loading="lazy">
+          <img src="assets/img/historia-social/05.webp" width="436" height="298" alt="" loading="lazy">
+          <img src="assets/img/historia-social/06.webp" width="436" height="298" alt="" loading="lazy">
+          <img src="assets/img/historia-social/08.webp" width="436" height="298" alt="" loading="lazy">
+          <img src="assets/img/historia-social/09.webp" width="436" height="298" alt="" loading="lazy">
+        </div>
+        <div class="rcard__meta"><span>Texto e imagen · 9 viñetas</span><span class="rcard__go"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></span></div>
+      </article>
+
+      <article class="rcard rcard--animacion reveal" style="--i:1">
+        <div class="rcard__top"><span class="rcard__ico"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-film"/></svg></span><span class="chip">Unidad 3</span></div>
+        <h3><a href="recursos/animacion.html">Los monstruos de Berni</a></h3>
+        <p>Corto animado sin diálogos sobre acompañar a un compañero que necesita un momento de calma.</p>
+        <div class="rcard__meta"><span>Video · 1:18 · con audiodescripción</span><span class="rcard__go"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></span></div>
+      </article>
+
+      <article class="rcard rcard--podcast reveal" style="--i:2">
+        <div class="rcard__top"><span class="rcard__ico"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-headphones"/></svg></span><span class="chip">Unidad 4</span></div>
+        <h3><a href="recursos/podcast.html">El aula que incluye, el podcast</a></h3>
+        <p>Dos voces sintéticas conversan sobre llevar un mismo contenido a varios formatos.</p>
+        <div class="rcard__wave" aria-hidden="true"><span style="--i:0;--h:40"></span><span style="--i:1;--h:70"></span><span style="--i:2;--h:55"></span><span style="--i:3;--h:80"></span><span style="--i:4;--h:35"></span><span style="--i:5;--h:65"></span><span style="--i:6;--h:45"></span><span style="--i:7;--h:75"></span><span style="--i:8;--h:30"></span><span style="--i:9;--h:60"></span><span style="--i:10;--h:50"></span><span style="--i:11;--h:72"></span></div>
+        <div class="rcard__meta"><span>Audio · 2:58 · con transcripción</span><span class="rcard__go"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></span></div>
+      </article>
+
+      <article class="rcard rcard--video reveal">
+        <div class="rcard__top"><span class="rcard__ico"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-video"/></svg></span><span class="chip">Unidad 5</span></div>
+        <h3><a href="recursos/video.html">Adaptar para incluir</a></h3>
+        <p>Documental breve sobre IA, DUA y las condiciones que hacen falta para usarla con criterio.</p>
+        <div class="rcard__meta"><span>Video · 2:04 · con subtítulos</span><span class="rcard__go"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></span></div>
+      </article>
+
+      <article class="rcard rcard--asistente reveal" style="--i:1">
+        <img class="rcard__avatar" src="assets/img/berni/berni-avatar.webp" width="160" height="160" alt="" loading="lazy">
+        <div class="rcard__top"><span class="rcard__ico" style="color:var(--c-ink)"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-chat"/></svg></span></div>
+        <div class="rcard__body">
+          <span class="chip">Unidad 6</span>
+          <h3><a href="asistente.html">Preguntale a Berni</a></h3>
+          <p>Un asistente guiado por opciones: elegís, Berni te orienta. Sin campo de texto, para que nadie cargue datos de chicos.</p>
+        </div>
+        <div class="rcard__meta"><span>Interactivo · por opciones</span><span class="rcard__go"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></span></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="quien-titulo">
+  <div class="wrap audience">
+    <div class="audience__head">
+      <p class="eyebrow">Para quién es</p>
+      <h2 id="quien-titulo">Un sitio que les habla a las personas adultas que acompañan</h2>
+      <p class="muted">Las niñas y los niños llegan a los recursos siempre con mediación adulta. Por eso cada recurso tiene una zona limpia y de baja estimulación “para mirar con los chicos”.</p>
+    </div>
+    <ol class="audience__list">
+      <li class="audience__item reveal">
+        <span class="audience__num" style="--tint:var(--t-butter)" aria-hidden="true">1</span>
+        <div>
+          <h3>Docentes de nivel inicial</h3>
+          <p>Mediadoras del proyecto. Encuentran los recursos listos para usar, una guía de antes, durante y después, y cómo se produjo cada uno con IA generativa.</p>
+          <p class="note"><a href="en-la-sala.html">Ir a la guía En la sala</a></p>
+        </div>
+      </li>
+      <li class="audience__item reveal" style="--i:1">
+        <span class="audience__num" style="--tint:var(--t-sky)" aria-hidden="true">2</span>
+        <div>
+          <h3>Familias</h3>
+          <p>Pueden mirar la animación y leer la historia social en casa, y entender qué IA se usó y cómo se cuidan los datos de las infancias.</p>
+          <p class="note"><a href="recursos/animacion.html">Mirar la animación juntos</a></p>
+        </div>
+      </li>
+      <li class="audience__item reveal" style="--i:2">
+        <span class="audience__num" style="--tint:var(--t-mint)" aria-hidden="true">3</span>
+        <div>
+          <h3>La sala de 5 años</h3>
+          <p>Las destinatarias y los destinatarios finales. Los recursos anticipan, modelan y acompañan, con especial atención al caso ficticio del Estudiante A.</p>
+          <p class="note"><a href="proyecto.html#caso">Conocer el caso</a></p>
+        </div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="ia-titulo">
+  <div class="wrap">
+    <div class="ink-panel reveal">
+      <div class="deco deco--spin" style="right:-3rem;bottom:-4rem;width:18rem;opacity:.14" aria-hidden="true"><svg viewBox="0 0 100 100"><path d="M50 4 C54 38 62 46 96 50 C62 54 54 62 50 96 C46 62 38 54 4 50 C38 46 46 38 50 4Z" fill="var(--c-on-ink)"/></svg></div>
+      <div>
+        <p class="eyebrow">Cómo usamos la IA</p>
+        <h2 id="ia-titulo">La herramienta genera. La decisión sigue siendo pedagógica.</h2>
+        <p>Cada recurso declara qué herramientas se usaron, para qué y quiénes lo validaron. Trabajamos con un caso ficticio, sin datos de niñas ni niños reales, y rotulamos todo contenido sintético.</p>
+        <div class="btn-row" style="margin-top:1.5rem">
+          <a class="btn" href="etica.html">Uso responsable de la IA<svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></a>
+          <a href="creditos.html">Ver todos los créditos</a>
+        </div>
+      </div>
+      <ul class="tool-cloud" aria-label="Herramientas de IA generativa utilizadas">
+        <li><span style="--dot:var(--d-star)">Gemini</span></li>
+        <li><span style="--dot:var(--d-sky)">ChatGPT</span></li>
+        <li><span style="--dot:var(--d-flower)">Canva Contenido Mágico</span></li>
+        <li><span style="--dot:var(--d-mint)">Veo 3.1 Fast</span></li>
+        <li><span style="--dot:var(--d-lav)">Suno</span></li>
+        <li><span style="--dot:var(--d-star)">Claude</span></li>
+        <li><span style="--dot:var(--d-sky)">ElevenLabs</span></li>
+        <li><span style="--dot:var(--d-mint)">Flow</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="site-footer__grid">
+      <div>
+        <a class="brand" href="index.html"><svg class="brand__mark" viewBox="0 0 40 40" aria-hidden="true" focusable="false"><path d="M6 37V19a14 14 0 0 1 28 0v18z" fill="var(--c-accent)"/><path d="M13 37V21a7 7 0 0 1 14 0v16z" fill="var(--t-butter)"/><circle cx="23.2" cy="29" r="1.6" fill="var(--c-ink)"/><circle cx="33.5" cy="7" r="4.5" fill="var(--d-mint)"/></svg><span class="brand__text">El aula que incluye<small>IA generativa como soporte de inclusión en el nivel inicial</small></span></a>
+        <p class="seal" style="margin-top:1.5rem"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-sparkle"/></svg><span><strong>Sello de transparencia.</strong> Recursos generados con IA generativa y validados por el Equipo 03.</span></p>
+      </div>
+      <nav aria-labelledby="navegacion-pie"><h2 id="navegacion-pie">Navegación</h2><ul><li><a href="index.html">Inicio</a></li><li><a href="proyecto.html">El proyecto</a></li><li><a href="recursos/index.html">Recursos</a></li><li><a href="asistente.html">Preguntale a Berni</a></li><li><a href="en-la-sala.html">En la sala</a></li><li><a href="etica.html">Ética</a></li><li><a href="creditos.html">Créditos</a></li></ul></nav>
+      <nav aria-labelledby="pie-mas"><h2 id="pie-mas">Transparencia</h2><ul>
+        <li><a href="mapa-del-sitio.html">Mapa del sitio</a></li>
+        <li><a href="creditos.html">Créditos y referencias</a></li>
+        <li><a href="etica.html">Uso responsable de la IA</a></li>
+        <li><a href="https://github.com/lpedaci/iag-tif">Código fuente en GitHub</a></li>
+      </ul></nav>
+    </div>
+    <div class="site-footer__bottom">
+      <p><strong>Equipo 03</strong> · Argüello, Clara · Costas, Silvia · Pedaci, Lourdes</p>
+      <p>Licenciatura en Tecnología Educativa, UTN FRBA · 2026</p>
+    </div>
+  </div>
+</footer>
+<a class="chat-launcher" href="asistente.html" aria-label="Preguntale a Berni" aria-haspopup="dialog" aria-expanded="false" aria-controls="chat-panel" data-chat-open>
+  <span class="chat-launcher__ring"><img src="assets/img/berni/berni-avatar.webp" alt="" width="48" height="48"></span><span class="chat-launcher__text">Preguntale a Berni</span>
+</a>
+<div class="chat-panel" id="chat-panel" hidden>
+  <div class="chat-panel__box" role="dialog" aria-modal="true" aria-labelledby="chat-panel-title">
+    <div class="chat" data-chat data-chat-lazy>
+  <div class="chat__head">
+    <img class="chat__avatar" src="assets/img/berni/berni-avatar.webp" alt="" width="44" height="44">
+    <div><p class="chat__title" id="chat-panel-title">Preguntale a Berni</p><p class="chat__status">Asistente guiado por opciones</p></div>
+    <button class="btn btn--sm btn--ghost" type="button" data-chat-reset>Reiniciar</button><button class="icon-btn chat-panel__close" type="button" data-chat-close><span class="visually-hidden">Cerrar el asistente</span><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-close"/></svg></button>
+  </div>
+  <div class="chat__log" role="log" aria-live="polite" aria-labelledby="chat-panel-title" tabindex="0">
+    <div class="skeleton" aria-hidden="true"><span></span><span></span><span></span></div>
+  </div>
+  <div class="chat__foot"><p>Berni responde con textos revisados por el Equipo 03. No hay campo para escribir: así nadie carga datos personales.</p></div>
+</div>
+  </div>
+</div>
+</body>
+</html>

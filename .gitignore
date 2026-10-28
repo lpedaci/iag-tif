@@ -1,0 +1,18 @@
+# Sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor
+.vscode/
+.idea/
+
+# Node
+node_modules/
+
+# Borradores de entregas
+entregas/*.tmp
+~$*
+
+# Configuración local de Claude Code
+.claude/
