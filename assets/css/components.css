@@ -1490,10 +1490,11 @@ mark.key {
   height: 44px;
   margin: -10px -6px -10px -4px;
   border-radius: 50%;
-  color: #0A66C2;
+  color: var(--c-ink);
   text-decoration: none;
-  transition: background-color var(--dur) var(--ease-out), transform var(--dur) var(--ease-spring);
+  transition: color var(--dur) var(--ease-out);
 }
 .team-links__in .icon { width: 1.05rem; height: 1.05rem; }
-.team-links__in:hover { background: var(--c-surface); color: #004182; transform: translateY(-1px); }
+.team-links__in:hover, .team-links__in:focus-visible { color: var(--c-berni); }
 [data-calma="on"] .team-links__in { color: var(--c-ink-soft); }
+[data-calma="on"] .team-links__in:hover, [data-calma="on"] .team-links__in:focus-visible { color: var(--c-berni); }

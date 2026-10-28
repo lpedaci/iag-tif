@@ -161,7 +161,7 @@ Resumen; el detalle completo está en [`sistema-de-diseno.html`](sistema-de-dise
 
 - **Paleta:** neutros crema cálidos, un único acento de acción coral terracota y tintes pastel por recurso (manteca, cielo, lavanda, durazno, menta). Todo vive en `assets/css/tokens.css`.
 - **Tipografía:** Fraunces solo para títulos grandes (serif cálida, editorial) y Lexend para el texto, la navegación y los botones. Lexend tiene letras amplias, aberturas abiertas y espaciado generoso, pensadas para mejorar la fluidez de lectura; es más cómoda para personas con miopía o astigmatismo que una sans condensada en tamaños chicos.
-- **Navegación:** menú completo en pastilla desde 1280 px, siempre que entre con aire; si no entra (pantalla angosta, zoom o letra agrandada), `main.js` lo detecta y muestra el botón de menú, que abre la navegación a pantalla completa. Al publicar cambios de CSS o JS, cambiá el parámetro `?v=` de los enlaces a esos archivos en todas las páginas (hoy `?v=20261027o`), así nadie ve estilos viejos guardados en caché.
+- **Navegación:** menú completo en pastilla desde 1280 px, siempre que entre con aire; si no entra (pantalla angosta, zoom o letra agrandada), `main.js` lo detecta y muestra el botón de menú, que abre la navegación a pantalla completa. Al publicar cambios de CSS o JS, cambiá el parámetro `?v=` de los enlaces a esos archivos en todas las páginas (hoy `?v=20261027p`), así nadie ve estilos viejos guardados en caché.
 - **Componentes:** grilla bento asimétrica de recursos, formas orgánicas decorativas (estrella, flor, destellos) que se ocultan en Modo calma, paneles de esquinas amplias y una zona neutra “para mirar con los chicos” en cada recurso.
 
 ## Ética y privacidad
