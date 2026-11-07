@@ -71,7 +71,7 @@ Todo dato de esta página viene de los trabajos prácticos entregados por el Equ
   7. Miro las imágenes de los monstruos de Berni y Bortusk Leer.
   8. Uso papeles de colores y marcadores para hacer mi obra.
   9. Mi monstruo queda genial y me siento muy feliz.
-- **Cómo se produjo:** Gemini (Google), versión gratuita en navegador. Estructura de prompt de Cruzado (2024, citado en UTN, 2026): instrucción, contexto, datos de entrada e indicador de salida. Técnicas: especificidad, personalización, uso de ejemplos y encadenamiento de prompts. Tres prompts: uno genérico (para contrastar), uno estructurado y uno encadenado que pidió la lista de pictogramas, una por oración. Ajustes: una idea por oración, primera persona y presente, anticipación con la canción, estrategia de auriculares, eliminación de todo dato identificable.
+- **Cómo se produjo:** Gemini (Google), versión gratuita en navegador. Estructura de prompt de Cruzado (2024, como se citó en UTN, 2026): instrucción, contexto, datos de entrada e indicador de salida. Técnicas: especificidad, personalización, uso de ejemplos y encadenamiento de prompts. Tres prompts: uno genérico (para contrastar), uno estructurado y uno encadenado que pidió la lista de pictogramas, una por oración. Ajustes: una idea por oración, primera persona y presente, anticipación con la canción, estrategia de auriculares, eliminación de todo dato identificable.
 - **Prompt de ejemplo para mostrar:** el Prompt 2 completo del TPU2 (Instrucción / Contexto / Datos de entrada / Indicador de salida).
 - **Herramientas de IA:** Gemini 3.6 Flash con razonamiento extendido (modo "Flash Extendido" en la app de Gemini, versión gratuita), para el texto (Prompt 2) y la lista de pictogramas (Prompt 3); ambas capturas del TPU2 muestran la interfaz de Gemini. Imagen de la grilla de pictogramas (Figura 6 del TPU2): también Gemini (confirmado por el equipo; el TP no lo nombra, conviene decirlo en el sitio).
 - **Evaluación de calidad (tabla del TPU2):** coherencia y cohesión alta; gramática y ortografía alta; relevancia alta; comprensión y claridad alta; adecuación al destinatario media-alta; originalidad media.
@@ -156,7 +156,7 @@ Todo dato de esta página viene de los trabajos prácticos entregados por el Equ
   10. Es ella quien elige, adapta y prepara el material pensando en su grupo, y lo pone a disposición de cada niño y de cada niña.
   11. Y cuando ese material llega a la sala, se vuelve juego, exploración y encuentro: la tecnología, ahí, se hace inclusión.
   12. Integrar la inteligencia artificial con criterio pedagógico hace del nivel inicial un espacio más accesible para todas las infancias.
-  - Las líneas 1, 6, 8 y 9 ya están corregidas según la transcripción automática de YouTube (la locución final difiere del guion del TPU5). Las líneas 10 a 12 no se pudieron contrastar completas: revisarlas escuchando el video desde 1:29. Siempre manda el audio.
+  - Las líneas 1, 6, 8 y 9 ya están corregidas según la transcripción automática de YouTube (la locución final difiere del guion del TPU5). Las líneas 10 a 12 se contrastaron el 07/11/2026 con los subtítulos automáticos: coinciden palabra por palabra. Siempre manda el audio.
 - **Cita APA:** Pedaci, L. [El servidor de Lourdes]. (24 de septiembre de 2026). *Adaptar para incluir: inteligencia artificial en la educación inicial* [Video]. YouTube. https://youtu.be/qJ5nEvhGr4I
   - Verificado en YouTube el 27/10/2026: fecha correcta (24/09/2026). Visibilidad: **No listado**. Etiqueta "Made with AI" activada. Licencia Creative Commons Atribución. Comentarios desactivados. Transcripción automática disponible.
   - Descripción de YouTube: "Video documental breve creado como recurso educativo sobre adaptaciones curriculares accesibles en el nivel inicial. Analiza cómo la Inteligencia Artificial generativa y las aplicaciones de apoyo pueden ayudar a crear contenido accesible para una sala de 5 años, siempre bajo el criterio pedagógico del docente y en el marco del Diseño Universal para el Aprendizaje."
@@ -194,15 +194,27 @@ Cinco dimensiones, tomadas de los TP del equipo:
 
 ## F. Referencias (APA 7, orden alfabético)
 
+Espejo exacto de la lista de `creditos.html` (actualizada el 07/11/2026 para el TIF II). Si se cambia una, se cambia la otra.
+
 Alba Pastor, C., Sánchez Serrano, J. M., y Zubillaga del Río, A. (2014). *Diseño Universal para el Aprendizaje (DUA): Pautas para su introducción en el currículo*. Proyecto DUALETIC, Ministerio de Economía y Competitividad. https://www.educadua.es/doc/dua/dua_pautas_intro_cv.pdf
 
-Anthropic. (2026). *Claude* (Opus 4.8) [Modelo de lenguaje grande]. https://claude.ai/
+Anthropic. (2026a). *Claude* (Opus 4.8) [Herramienta de IA generativa]. https://claude.ai/
+
+Anthropic. (2026b). *Claude Code* [Herramienta de IA generativa]. https://claude.com/claude-code
+
+Argüello, C., Costas, S., y Pedaci, L. (2026a). *El aula que incluye: IA generativa como soporte de inclusión en el nivel inicial* [Sitio web]. https://lpedaci.github.io/iag-tif/
+
+Argüello, C., Costas, S., y Pedaci, L. (2026b). *Hoy creamos nuestro monstruo* [Historia social con pictogramas generada con IA]. El aula que incluye. https://lpedaci.github.io/iag-tif/recursos/historia-social.html
+
+Argüello, C., Costas, S., y Pedaci, L. (2026c). *Preguntale a Berni* [Chatbot]. El aula que incluye. https://lpedaci.github.io/iag-tif/asistente.html
+
+Argüello, C., Costas, S., y Pedaci, L. (Productoras). (2026d, 11 de septiembre). *El aula que incluye: crear contenido educativo con IA generativa* [Episodio de podcast de audio]. En *El aula que incluye*. Google Drive. https://drive.google.com/file/d/1LhOBEpT0pVuegL7HiBLqOZKyaX_B_HoB/view
 
 Canva. (2026). *Contenido Mágico* [Herramienta de IA generativa]. https://www.canva.com
 
-ElevenLabs. (2026). *ElevenLabs* (Eleven Multilingual v2 y Music v2) [Herramienta de generación de voz y música con IA]. https://elevenlabs.io/
+ElevenLabs. (2026). *ElevenLabs* (Eleven Multilingual v2 y Music v2) [Herramienta de IA generativa]. https://elevenlabs.io/
 
-Fainholc, B. (2021). Una educación continua híbrida adaptativa para los tiempos de postpandemia y más allá. *Revista de Educación Continua de Latinoamérica y Europa (RECLA)*, (8).
+Fainholc, B. (2021). Una educación continua híbrida adaptativa para los tiempos de pospandemia y más allá. *Retos y Claves de la Educación Continua*, (8), 7-22. https://recla.org/revista/edicion-8.pdf
 
 Franganillo, J. (2023). La inteligencia artificial generativa y su impacto en la creación de contenidos mediáticos. *Methaodos. Revista de Ciencias Sociales, 11*(2), 1-17. https://doi.org/10.17502/mrcs.v11i2.710
 
@@ -210,43 +222,49 @@ Gómez-Diago, G. (2024). Herramientas de inteligencia artificial para la creaci�
 
 Google. (2026a). *Centro de privacidad de las apps de Gemini*. Ayuda de Gemini Apps. https://support.google.com/gemini/answer/13594961
 
-Google. (2026b). *Gemini 3.6 Flash* (versión con razonamiento extendido) [Modelo de lenguaje grande]. https://gemini.google.com
+Google. (2026b). *Flow* (Omni 1.1 Flash y Veo 3.1 Lite) [Herramienta de IA generativa]. https://labs.google/flow
 
-Google. (2026c). *Veo 3.1 Fast* [Modelo de generación de video]. https://gemini.google.com
+Google. (2026c). *Gemini 3.6 Flash* (versión con razonamiento extendido) [Herramienta de IA generativa]. https://gemini.google.com
 
-Google. (2026d). *Flow* (Omni 1.1 Flash y Veo 3.1 Lite) [Herramienta de generación de video con IA]. https://labs.google/flow
+Google. (2026d). *Veo 3.1 Fast* [Herramienta de IA generativa]. https://gemini.google.com
 
 Gray, C. (2010). *The new social story book*. Future Horizons.
 
 Hiatt, J. M. (2006). *ADKAR: A model for change in business, government and our community*. Prosci Learning Center Publications.
 
-Mishra, P., y Koehler, M. J. (2006). Technological pedagogical content knowledge: A framework for teacher knowledge. *Teachers College Record, 108*(6), 1017-1054.
+Mishra, P., y Koehler, M. J. (2006). Technological pedagogical content knowledge: A framework for teacher knowledge. *Teachers College Record, 108*(6), 1017-1054. https://doi.org/10.1111/j.1467-9620.2006.00684.x
 
 Navas Guzmán, L., y Meier, C. (2024). Experiencia en el aula basada en la (re)creación de imágenes mediante inteligencia artificial. *Revista Ecos de la Academia, 10*(19), e1076, 1-23. https://doi.org/10.53358/ecosacademia.v10i19.1076
 
-OpenAI. (2026). *ChatGPT* [Herramienta de IA generativa]. https://chatgpt.com
+OpenAI. (2026). *ChatGPT* (GPT-5) [Herramienta de IA generativa]. https://chatgpt.com
 
-Sabzalieva, E., y Valentini, A. (2023). *ChatGPT e inteligencia artificial en la educación superior: Guía de inicio rápido*. UNESCO IESALC.
+Pedaci, L. [El servidor de Lourdes]. (2026a, 27 de agosto). *Los monstruos de Berni: una animación para la inclusión en la primera infancia* [Video]. YouTube. https://youtu.be/EffCv8EIAwI
 
-Suno. (2026). *Suno* [Herramienta de generación de música con IA]. https://suno.com
+Pedaci, L. [El servidor de Lourdes]. (2026b, 24 de septiembre). *Adaptar para incluir: inteligencia artificial en la educación inicial* [Video]. YouTube. https://youtu.be/qJ5nEvhGr4I
+
+Sabzalieva, E., y Valentini, A. (2023). *ChatGPT e inteligencia artificial en la educación superior: Guía de inicio rápido*. UNESCO IESALC. https://unesdoc.unesco.org/ark:/48223/pf0000385146_spa
+
+Suno. (2026). *Suno* [Herramienta de IA generativa]. https://suno.com
+
+TechSmith. (2026). *Camtasia* [Software de edición de video]. https://www.techsmith.com/camtasia/
 
 Torrealba Dugarte, J. D. D. (2024). Eduética en el uso de la inteligencia artificial a través de la ingeniería de prompts. *Revista Digital de Investigación y Postgrado, 5*(10), 261-266. https://doi.org/10.59654/7j69c731
 
-Universidad Tecnológica Nacional. (2026). *Material obligatorio Unidades 2 a 7* [Material de cátedra]. Gestión de recursos digitales con IA generativa, Licenciatura en Tecnología Educativa. `[Decidir: una entrada por unidad citada o una sola; con más de una del mismo año usar 2026a, 2026b...]`
+Universidad Tecnológica Nacional. (2026). *Material obligatorio Unidades 2 a 7* [Material de cátedra]. Gestión de recursos digitales con IA generativa, Licenciatura en Tecnología Educativa, Facultad Regional Buenos Aires.
 
 Villegas Dianta, A., y Sepúlveda-Irribarra, C. (2024). Creación de cuentos digitales con apoyo de inteligencia artificial. *Revista Iberoamericana de Tecnología en Educación y Educación en Tecnología*, (37), 130-138. https://doi.org/10.24215/18509959.37.e13
 
 Yaguana Romero, H., Arrobo-Agila, J. P., y Rene Jaramillo, A. (2022). La inteligencia artificial en la narrativa sonora. Estudio de caso. *Anàlisi: Quaderns de Comunicació i Cultura*, (66), 9-23. https://doi.org/10.5565/rev/analisi.3476
 
-+ las 5 referencias de los recursos propios (C1 a C5) y la del sitio:
-Argüello, C., Costas, S., y Pedaci, L. (2026). *El aula que incluye: IA generativa como soporte de inclusión en el nivel inicial* [Sitio web]. `<URL>`
-
 Notas:
-- Las letras a, b, c, d de Google deben coincidir con el orden en que se citan en el texto del sitio; Claude Code tiene que revisar la correspondencia cita ↔ referencia (toda cita tiene su referencia y viceversa).
-- Villegas Dianta y Sepúlveda-Irribarra (2024) se citó en el TPU2 pero faltaba en su lista; ya está incluida acá.
+- Descriptor unificado para todas las herramientas de IA: `[Herramienta de IA generativa]`. Camtasia no es IA: `[Software de edición de video]`.
+- Anthropic 2026a = Claude (Opus 4.8); 2026b = Claude Code. Argüello et al. 2026a = sitio, 2026b = historia social, 2026c = asistente, 2026d = podcast. Pedaci 2026a = animación, 2026b = video.
+- Fainholc (2021): el título original dice "pospandemia"; la publicación es *Retos y Claves de la Educación Continua* (RECLA), n.º 8, pp. 7-22.
+- Cruzado (2024) se cita siempre como fuente secundaria: "como se citó en Universidad Tecnológica Nacional, 2026".
+- Cada cita del sitio tiene su referencia y cada referencia está citada al menos una vez (verificado el 07/11/2026).
 
 ---
 
 ## G. Declaración de uso de IA (para Créditos y para los PDF)
 
-Para la elaboración de este espacio digital se utilizó IA generativa (Claude de Anthropic) como apoyo en la programación del sitio, la organización y la revisión de la redacción. La conceptualización, las decisiones pedagógicas, la selección de recursos, el diseño de la experiencia y la validación de todos los contenidos son de autoría del Equipo 03. Los recursos multimedia se produjeron con las herramientas detalladas en cada uno, con las adecuaciones pertinentes de prompting y revisión humana en cada iteración.
+Para la elaboración de este espacio digital se utilizó IA generativa (Claude y Claude Code, de Anthropic; Anthropic, 2026a, 2026b) como apoyo en la programación del sitio, la organización y la revisión de la redacción. La conceptualización, las decisiones pedagógicas, la selección de recursos, el diseño de la experiencia y la validación de todos los contenidos son de autoría del Equipo 03. Los recursos multimedia se produjeron con las herramientas detalladas en cada uno, con las adecuaciones pertinentes de prompting y revisión humana en cada iteración.

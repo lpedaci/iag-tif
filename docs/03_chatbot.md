@@ -21,7 +21,12 @@ inicio: "¿Quién sos?"
 ├── Soy docente ─────────┐
 ├── Soy de una familia ──┼──► menu (con recomendación según perfil)
 ├── Vengo a evaluar ─────┤
-└── Solo estoy mirando ──┘
+├── Solo estoy mirando ──┘
+└── No encuentro lo que busco → no-encuentro: enlace al Mapa del sitio
+    ├── Recorrido para docentes      → mapa-del-sitio.html#recorrido-docentes
+    ├── Recorrido para familias      → mapa-del-sitio.html#recorrido-familias
+    ├── Recorrido para evaluar       → mapa-del-sitio.html#recorrido-evaluacion
+    └── Ver los recursos
 menu: "¿Qué querés hacer?"
 ├── Por dónde empiezo          → recomendación según perfil
 ├── Ver los recursos           → elegir recurso → ficha breve de cada uno + enlace
