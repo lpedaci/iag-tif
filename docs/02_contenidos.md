@@ -250,7 +250,7 @@ TechSmith. (2026). *Camtasia* [Software de edición de video]. https://www.techs
 
 Torrealba Dugarte, J. D. D. (2024). Eduética en el uso de la inteligencia artificial a través de la ingeniería de prompts. *Revista Digital de Investigación y Postgrado, 5*(10), 261-266. https://doi.org/10.59654/7j69c731
 
-Universidad Tecnológica Nacional. (2026). *Material obligatorio Unidades 2 a 7* [Material de cátedra]. Gestión de recursos digitales con IA generativa, Licenciatura en Tecnología Educativa, Facultad Regional Buenos Aires.
+Universidad Tecnológica Nacional. (2026). *Material obligatorio Unidades 2 a 7* [Material de cátedra]. Gestión de recursos digitales con IA generativa, Licenciatura en Tecnología Educativa.
 
 Villegas Dianta, A., y Sepúlveda-Irribarra, C. (2024). Creación de cuentos digitales con apoyo de inteligencia artificial. *Revista Iberoamericana de Tecnología en Educación y Educación en Tecnología*, (37), 130-138. https://doi.org/10.24215/18509959.37.e13
 

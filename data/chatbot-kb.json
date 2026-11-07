@@ -277,7 +277,7 @@
       ]
     },
     "equipo": {
-      "mensaje": "Somos Clara Argüello, Silvia Costas y Lourdes Pedaci, Equipo 03 de la Licenciatura en Tecnología Educativa de la UTN FRBA. Hicimos este sitio para la materia Gestión de recursos digitales con IA generativa.",
+      "mensaje": "Somos Clara Argüello, Silvia Costas y Lourdes Pedaci, Equipo 03 de la Licenciatura en Tecnología Educativa de la UTN. Hicimos este sitio para la materia Gestión de recursos digitales con IA generativa.",
       "enlace": { "texto": "Ver créditos", "href": "creditos.html" },
       "opciones": [
         { "texto": "Ver los recursos", "destino": "recursos" },
