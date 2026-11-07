@@ -179,7 +179,7 @@ Resumen; el detalle completo está en [`sistema-de-diseno.html`](sistema-de-dise
 
 Los créditos completos por recurso (herramientas de IA, rol de cada una y cita APA 7) están en [`creditos.html`](creditos.html).
 
-**Declaración de uso de IA:** para la elaboración de este espacio digital se utilizó IA generativa (Claude de Anthropic) como apoyo en la programación del sitio, la organización y la revisión de la redacción. La conceptualización, las decisiones pedagógicas, la selección de recursos, el diseño de la experiencia y la validación de todos los contenidos son de autoría del Equipo 03.
+**Declaración de uso de IA:** para la elaboración de este espacio digital se utilizó IA generativa (Claude y Claude Code, de Anthropic) como apoyo en la programación del sitio, la organización y la revisión de la redacción. La conceptualización, las decisiones pedagógicas, la selección de recursos, el diseño de la experiencia y la validación de todos los contenidos son de autoría del Equipo 03.
 
 **Cómo citar el sitio (APA 7):**
 Argüello, C., Costas, S., y Pedaci, L. (2026). *El aula que incluye: IA generativa como soporte de inclusión en el nivel inicial* [Sitio web]. https://lpedaci.github.io/iag-tif/

@@ -13,11 +13,10 @@
       "pagina": "recursos/historia-social.html",
       "url_externa": null,
       "herramientas_ia": [
-        { "nombre": "Gemini 3.6 Flash con razonamiento extendido (Google)", "rol": "Redacción de la historia social y lista de pictogramas" },
-        { "nombre": "Gemini (Google)", "rol": "Generación de la imagen de los pictogramas" }
+        { "nombre": "Gemini 3.6 Flash con razonamiento extendido (Google)", "rol": "Redacción de la historia social, lista de pictogramas y grilla de nueve pictogramas con la generación de imágenes de la misma app" }
       ],
       "edicion_no_ia": [],
-      "apa": "Argüello, C., Costas, S., y Pedaci, L. (2026). Hoy creamos nuestro monstruo [Historia social con pictogramas generada con IA]. El aula que incluye. https://lpedaci.github.io/iag-tif/recursos/historia-social.html"
+      "apa": "Argüello, C., Costas, S., y Pedaci, L. (2026b). Hoy creamos nuestro monstruo [Historia social con pictogramas generada con IA]. El aula que incluye. https://lpedaci.github.io/iag-tif/recursos/historia-social.html"
     },
     {
       "id": "animacion",
@@ -30,13 +29,13 @@
       "youtube_id": "EffCv8EIAwI",
       "url_externa": "https://youtu.be/EffCv8EIAwI",
       "herramientas_ia": [
-        { "nombre": "ChatGPT (OpenAI)", "rol": "Diseño del personaje Berni (imagen de referencia)" },
+        { "nombre": "ChatGPT con GPT-5 (OpenAI)", "rol": "Diseño del personaje Berni (imagen de referencia)" },
         { "nombre": "Contenido Mágico (Canva)", "rol": "Escena de apertura" },
         { "nombre": "Veo 3.1 Fast (Google, plan AI Pro)", "rol": "Escenas animadas, modo imagen a video" },
         { "nombre": "Suno", "rol": "Música de fondo" }
       ],
       "edicion_no_ia": ["Camtasia (montaje, audio y placa de créditos)"],
-      "apa": "Pedaci, L. [El servidor de Lourdes]. (27 de agosto de 2026). Los monstruos de Berni: una animación para la inclusión en la primera infancia [Video]. YouTube. https://youtu.be/EffCv8EIAwI"
+      "apa": "Pedaci, L. [El servidor de Lourdes]. (2026a, 27 de agosto). Los monstruos de Berni: una animación para la inclusión en la primera infancia [Video]. YouTube. https://youtu.be/EffCv8EIAwI"
     },
     {
       "id": "podcast",
@@ -55,7 +54,7 @@
       ],
       "edicion_no_ia": ["Camtasia (postproducción)"],
       "evaluadas_no_usadas": ["Murf AI"],
-      "apa": "Pedaci, L. (11 de septiembre de 2026). Equipo 03 · Episodio El aula que incluye: crear contenido educativo con IA generativa [Podcast]. Google Drive. https://drive.google.com/file/d/1LhOBEpT0pVuegL7HiBLqOZKyaX_B_HoB/view"
+      "apa": "Argüello, C., Costas, S., y Pedaci, L. (Productoras). (2026d, 11 de septiembre). El aula que incluye: crear contenido educativo con IA generativa [Episodio de podcast de audio]. En El aula que incluye. Google Drive. https://drive.google.com/file/d/1LhOBEpT0pVuegL7HiBLqOZKyaX_B_HoB/view"
     },
     {
       "id": "video",
@@ -74,7 +73,7 @@
       ],
       "edicion_no_ia": ["Camtasia (montaje)", "YouTube (subtítulos automáticos)"],
       "evaluadas_no_usadas": ["Seedance 1.0 vía CapCut"],
-      "apa": "Pedaci, L. [El servidor de Lourdes]. (24 de septiembre de 2026). Adaptar para incluir: inteligencia artificial en la educación inicial [Video]. YouTube. https://youtu.be/qJ5nEvhGr4I"
+      "apa": "Pedaci, L. [El servidor de Lourdes]. (2026b, 24 de septiembre). Adaptar para incluir: inteligencia artificial en la educación inicial [Video]. YouTube. https://youtu.be/qJ5nEvhGr4I"
     },
     {
       "id": "asistente",
@@ -90,7 +89,7 @@
         { "nombre": "Claude Code (Anthropic)", "rol": "Apoyo en la programación del asistente" }
       ],
       "edicion_no_ia": [],
-      "apa": "Argüello, C., Costas, S., y Pedaci, L. (2026). Preguntale a Berni [Chatbot]. El aula que incluye. https://lpedaci.github.io/iag-tif/asistente.html"
+      "apa": "Argüello, C., Costas, S., y Pedaci, L. (2026c). Preguntale a Berni [Chatbot]. El aula que incluye. https://lpedaci.github.io/iag-tif/asistente.html"
     }
   ]
 }
