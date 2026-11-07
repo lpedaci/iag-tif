@@ -1471,6 +1471,9 @@ code { font-family: ui-monospace, "Cascadia Code", Consolas, monospace; font-siz
 .nav__pair:has(.is-active, [aria-current="page"]):hover > .nav__link { color: var(--c-on-ink); }
 .nav__pair:has(.is-active, [aria-current="page"]) > .nav__link:hover { background: transparent; }
 .nav__pair:has([aria-expanded="true"]) { background: var(--c-bg-deep); }
+/* Abierto en una página de Recursos: conserva el fondo oscuro para que el texto claro se siga leyendo */
+.nav__pair:has(.is-active, [aria-current="page"]):has([aria-expanded="true"]) { background: color-mix(in srgb, var(--c-ink) 88%, var(--c-on-ink)); }
+.nav__pair:has(.is-active, [aria-current="page"]):has([aria-expanded="true"]) > .nav__link { color: var(--c-on-ink); }
 
 /* ==========================================================================
    Figura TPACK: rótulos dentro de cada zona y animación de armado

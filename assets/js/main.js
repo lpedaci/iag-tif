@@ -22,7 +22,9 @@
   /* ---------- Submenú de Recursos (desktop) ---------- */
   $$('[data-submenu-toggle]').forEach(function (btn) {
     var menu = document.getElementById(btn.getAttribute('aria-controls'));
-    var item = btn.parentElement;
+    // El contenedor es el <li> completo (enlace, flecha y lista): si fuera solo el par
+    // enlace + flecha, al tocar una opción el menú se cerraba antes de navegar.
+    var item = btn.closest('.nav__has-sub') || btn.parentElement;
     function abrir(on) {
       btn.setAttribute('aria-expanded', on ? 'true' : 'false');
       menu.hidden = !on;
