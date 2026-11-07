@@ -266,6 +266,14 @@
   .nav { display: block; }
   .menu-toggle, .mobile-menu { display: none !important; }
 }
+/* Por debajo de 360 px: menos aire entre logo y botones, para que el encabezado
+   entre aun con el espaciado de texto agrandado por la persona (WCAG 1.4.12) */
+@media (max-width: 359px) {
+  .site-header__inner { gap: var(--s-2); }
+  .brand { gap: 0.4rem; min-width: 0; }
+  .header-tools { gap: 0.25rem; }
+  .calma-toggle { padding: 0.4rem 0.55rem 0.4rem 0.4rem; gap: 0.35rem; }
+}
 @media (max-width: 479px) {
   .calma-toggle { padding-right: 0.7rem; }
   .calma-toggle__label { display: none; }
@@ -1076,6 +1084,8 @@ tbody th { font-weight: 600; }
   font-weight: 600;
   color: var(--c-ink);
   transition: border-color var(--dur), transform var(--dur) var(--ease-spring);
+  max-width: 100%;
+  overflow-wrap: anywhere;   /* con el espaciado de texto agrandado, una palabra larga no se sale de la pantalla (WCAG 1.4.12) */
 }
 .tree a:hover { border-color: var(--c-ink); transform: translateX(3px); }
 .tree a .dot { display: grid; place-items: center; width: 2rem; height: 2rem; border-radius: 50%; background: var(--tint, var(--c-bg-deep)); }
@@ -1293,7 +1303,7 @@ html:not(.js) .calma-toggle { display: none; }
 .chat__head .chat-panel__close { width: 44px; height: 44px; flex: none; }
 .chat__head { padding-inline: var(--s-4); }
 /* Estado en una sola línea; si algún día no entra, se recorta con puntos suspensivos en vez de partirse */
-.chat__status { display: block; overflow: hidden; text-overflow: ellipsis; padding-left: 0.2rem; margin: 0.1rem 0 0 -0.2rem; line-height: 1.3; }
+.chat__status { display: block; white-space: normal; margin: 0.1rem 0 0; line-height: 1.3; }   /* entra en una línea; si la persona agranda el espaciado del texto, baja de renglón en vez de cortarse (WCAG 1.4.12) */
 .chat__status::before { display: inline-block; margin-right: 0.4rem; vertical-align: 0.05em; }
 .audience > * { min-width: 0; }
 /* Nodo de inicio: dos opciones por fila que ocupan todo el ancho, y la última
