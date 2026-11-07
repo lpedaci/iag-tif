@@ -13,7 +13,42 @@
         { "texto": "Soy docente", "destino": "menu", "perfil": "docente" },
         { "texto": "Soy de una familia", "destino": "menu", "perfil": "familia" },
         { "texto": "Vengo a evaluar el trabajo", "destino": "menu", "perfil": "evaluacion" },
-        { "texto": "Solo estoy mirando", "destino": "menu", "perfil": "visita" }
+        { "texto": "Solo estoy mirando", "destino": "menu", "perfil": "visita" },
+        { "texto": "No encuentro lo que busco", "destino": "no-encuentro" }
+      ]
+    },
+    "no-encuentro": {
+      "mensaje": "No pasa nada, te ayudo a ubicarte. El Mapa del sitio muestra todas las páginas en un solo lugar, a no más de dos clics de Inicio, y propone recorridos según quién visita el sitio. ¿Querés seguir alguno?",
+      "enlace": { "texto": "Ir al mapa del sitio", "href": "mapa-del-sitio.html" },
+      "opciones": [
+        { "texto": "Recorrido para docentes", "destino": "rec-docentes" },
+        { "texto": "Recorrido para familias", "destino": "rec-familias" },
+        { "texto": "Recorrido para evaluar el trabajo", "destino": "rec-evaluacion" },
+        { "texto": "Ver los recursos", "destino": "recursos" }
+      ]
+    },
+    "rec-docentes": {
+      "mensaje": "Para docentes que llegan por primera vez: Inicio, El proyecto, Recursos, la historia social, la guía En la sala y, al final, este asistente para resolver dudas.",
+      "enlace": { "texto": "Ver el recorrido para docentes", "href": "mapa-del-sitio.html#recorrido-docentes" },
+      "opciones": [
+        { "texto": "Usar los recursos en la sala", "destino": "sala" },
+        { "texto": "Ver los recursos", "destino": "recursos" }
+      ]
+    },
+    "rec-familias": {
+      "mensaje": "Para familias: mirar juntos la animación de Berni, leer la historia social y, si surge una duda, preguntarme qué es una historia social.",
+      "enlace": { "texto": "Ver el recorrido para familias", "href": "mapa-del-sitio.html#recorrido-familias" },
+      "opciones": [
+        { "texto": "Animación de Berni", "destino": "r-animacion" },
+        { "texto": "Historia social con pictogramas", "destino": "r-historia" }
+      ]
+    },
+    "rec-evaluacion": {
+      "mensaje": "Para evaluar el trabajo: Inicio, los cinco recursos con sus créditos, Créditos y referencias, Uso responsable de la IA y el Mapa del sitio.",
+      "enlace": { "texto": "Ver el recorrido de evaluación", "href": "mapa-del-sitio.html#recorrido-evaluacion" },
+      "opciones": [
+        { "texto": "Saber cómo usaron la IA", "destino": "ia" },
+        { "texto": "Quiénes hicieron el sitio", "destino": "equipo" }
       ]
     },
     "menu": {
@@ -29,10 +64,10 @@
     },
     "empezar": {
       "mensaje_por_perfil": {
-        "docente": "Te sugiero empezar por la historia social con pictogramas, que se usa directamente en la sala, y después pasar por la guía En la sala.",
-        "familia": "Te sugiero mirar la animación de Berni con los chicos y después leer juntos la historia social.",
-        "evaluacion": "Te sugiero recorrer El proyecto, después los cinco recursos y cerrar con Créditos y Uso responsable de la IA. El Mapa del sitio muestra todo junto.",
-        "visita": "Te sugiero empezar por El proyecto, que cuenta para qué hicimos este sitio."
+        "docente": "Primero mirá la historia social con pictogramas, que se usa directamente en la sala, y después pasá por la guía En la sala.",
+        "familia": "Miren juntos la animación de Berni y después lean la historia social.",
+        "evaluacion": "Recorré El proyecto y los cinco recursos, y cerrá con Créditos y Uso responsable de la IA. En el Mapa del sitio está todo junto.",
+        "visita": "Empezá por El proyecto: ahí contamos para qué hicimos el sitio."
       },
       "enlace_por_perfil": {
         "docente": { "texto": "Ir a la historia social", "href": "recursos/historia-social.html" },
@@ -46,7 +81,7 @@
       ]
     },
     "recursos": {
-      "mensaje": "Hay cinco recursos, cada uno en un formato distinto, para que el mismo contenido tenga varias puertas de entrada. ¿Cuál querés conocer?",
+      "mensaje": "Hay cinco recursos, cada uno en un formato distinto, para que cada chico encuentre la forma que mejor le funciona. ¿Cuál querés conocer?",
       "enlace": { "texto": "Ver todos los recursos", "href": "recursos/index.html" },
       "opciones": [
         { "texto": "Historia social con pictogramas", "destino": "r-historia" },
@@ -99,7 +134,7 @@
       ]
     },
     "sala": {
-      "mensaje": "Te proponemos tres momentos. ¿Cuál te interesa?",
+      "mensaje": "La guía divide la actividad en antes, durante y después. ¿Cuál querés ver?",
       "enlace": { "texto": "Ver la guía En la sala", "href": "en-la-sala.html" },
       "opciones": [
         { "texto": "Antes: anticipar", "destino": "sala-antes" },
@@ -227,7 +262,7 @@
       ]
     },
     "ia-etica": {
-      "mensaje": "La IA sugiere y el equipo decide: revisamos cada resultado, evitamos estereotipos, avisamos qué contenido es sintético y priorizamos herramientas gratuitas o accesibles.",
+      "mensaje": "Revisamos cada resultado antes de usarlo, cuidamos que no hubiera estereotipos, avisamos qué es sintético y usamos herramientas gratuitas o accesibles.",
       "enlace": { "texto": "Uso responsable de la IA", "href": "etica.html" },
       "opciones": [
         { "texto": "Privacidad", "destino": "ia-privacidad" },

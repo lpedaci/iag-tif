@@ -162,6 +162,7 @@
 
     var lista = el('ul', 'chat__options');
     lista.setAttribute('aria-label', 'Opciones');
+    if (id === this.kb.inicio) lista.classList.add('chat__options--inicio');
     (nodo.opciones || []).forEach(function (op) {
       lista.appendChild(self.boton(op.texto, false, function (btn) {
         if (op.perfil) self.perfil = op.perfil;
@@ -203,7 +204,12 @@
 
   Chat.prototype.bajar = function () {
     var log = this.log;
-    requestAnimationFrame(function () { log.scrollTop = log.scrollHeight; });
+    // En el primer mensaje no hay nada que bajar: se lee desde arriba. Además, un
+    // scroll programático durante la carga corta la medición de LCP en Chrome.
+    if (this.pila.length <= 1) return;
+    requestAnimationFrame(function () {
+      if (log.scrollHeight > log.clientHeight) log.scrollTop = log.scrollHeight;
+    });
   };
 
   /* ---------- Instancias en página (asistente.html) ---------- */
