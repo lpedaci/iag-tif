@@ -6,7 +6,7 @@
 | 1 | Imagen del monstruo verde menta, si existe (opcional) | assets/img/berni/ | Lourdes |
 | 2 | Plantilla oficial de carátula, si la cátedra tiene una (si no, se replica la de los TP) | documentos | Lourdes |
 | 3 | Subtítulos de YouTube del video: revisados el 07/11 (ver `05_QA.md`, sección 7). El texto automático coincide con las 12 líneas de la transcripción; solo fallan mayúsculas y puntuación. Recomendado: subir un .srt corregido desde la transcripción de 02_contenidos C4 | YouTube Studio | Lourdes |
-| 5 | **BLOQUEANTE.** Ambos videos (animación y documental) tienen la inserción desactivada: el reproductor del sitio muestra "El propietario del vídeo ha inhabilitado su reproducción en otros sitios web". Activar en YouTube Studio > Contenido > cada video > Detalles > Mostrar más > Licencia y distribución > "Permitir inserción". Detectado el 07/11 | YouTube Studio | Lourdes |
+| 5 | RESUELTO el 07/11: inserción de los dos videos activada en YouTube Studio. Verificado en el sitio publicado: ambos reproductores cargan y reproducen (oEmbed 200). | YouTube Studio | Lourdes |
 | 4 | Diseño visual: imágenes de referencia que se pasan en el chat de Claude Code en la Fase 1 | Fase 1 | Lourdes |
 
 Resuelto el 27/10: audio del podcast (en el repo), guion completo, herramienta de pictogramas (Gemini), fechas de YouTube, nombres de los docentes, fecha de cursada. (La inserción de los videos figuraba como resuelta, pero el 07/11 estaba desactivada: ver pendiente 5.)
